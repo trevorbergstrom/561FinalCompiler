@@ -1,0 +1,13 @@
+/* This code has a bad superclass identifier. Should Fail type checking*/
+class Pt(x: Int) {
+	this.x = x;
+}
+
+class Pt2(x: Int) extends Pt {
+	this.x = x;
+}
+
+class P3(x: Int) extends OtherPt {
+	this.x = x;
+}
+

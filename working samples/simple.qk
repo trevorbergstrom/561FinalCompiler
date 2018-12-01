@@ -1,0 +1,54 @@
+/* this is working quack code*/
+/* class instances can be initiated*/
+/* Integer and string variables can be initiated and printed*/
+
+/* class methods can be called */
+/* simple if/ else loops can be ran, with EQUALS relational operator */
+
+class DataPt() {
+	this.f = 0;
+	def integerp() {
+		x: Int = 7;
+		x.PRINT();
+	}
+}
+
+class C2(j: Int) {
+	this.k = j;
+
+	def M2() {
+		x: Int = 5;
+		x.PRINT();
+	}
+}
+
+x: Int = 5;
+x.PRINT();
+
+var3: Int = 4;
+
+y: String = "A String is here\n";
+y.PRINT();
+
+z = DataPt();
+z.integerp();
+
+z.PRINT();
+
+xyz = C2(7);
+
+xyz.PRINT();
+
+if(x == var3) {
+	l: Int = 69;
+	l.PRINT();
+} else {
+	j: Int = 3;
+	j.PRINT();
+}
+
+zzz: Int = 4;
+
+
+
+

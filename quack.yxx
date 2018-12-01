@@ -1,0 +1,546 @@
+/* Parser for the quack language */
+
+%skeleton "lalr1.cc"
+%require "3.0"
+
+%code requires{
+	namespace yy{
+		class Lexer;
+	}
+	#include "ASTNode.h"
+}
+
+%locations
+%define parse.trace
+
+%parse-param { yy::Lexer& lexer }
+%parse-param { AST::ASTNode** root } 
+
+%code{
+	#include "lex.yy.h"
+	#undef yylex
+	#define yylex lexer.yylex
+	void dump(AST::ASTNode* n);
+}
+
+%union {
+	int 	num;
+	char* 	str;
+	AST::ASTNode* node;
+}
+%type <node> program
+
+%token <str> IDENT
+%token <str> STR_LIT
+%token <num> INT_LIT
+
+%type <node>	class
+%type <node>	classes
+%type <node>	extends
+
+%type <node>	methods
+%type <node>	method
+
+%type <node>	formal_arg_list
+%type <node>	formal_arg
+%type <node>	formal_args
+%type <node>	actual_args
+
+%type <node>	statement
+%type <node>	statements
+%type <node>	else elif elifs
+%type <node>	statement_block
+
+%type <node>	r_expr
+%type <node>	l_expr
+
+%type <node>	typecase
+%type <node>	type_alt
+%type <node>	ident
+
+%token CLASS DEF EXTENDS RETURN TYPECASE
+
+%token IF ELIF ELSE WHILE
+
+%left AND OR NOT EQUALS ATMOST ATLEAST
+
+%left '<' '>'
+%left '+' '-'
+%left '/' '*'
+%left '.'
+
+
+%%
+/*---------------------------------------------------------------------------------*/
+program:
+	classes statements { 
+		$$ = new AST::ASTNode(Program);
+		$$->append($1);
+		$$->append($2);
+		*root = $$; 
+		
+	};
+/*---------------------------------------------------------------------------------*/
+classes:
+	%empty { $$ = new AST::ASTNode(Classes); }
+	| classes class { 
+		$1->append($2);
+		$$ = $1; 
+	 };
+
+class:
+	CLASS ident '(' formal_arg_list ')' extends '{' statements methods '}' {
+		$$ = new AST::ASTNode(Class);
+		$2->sType_ = ClassName;
+		$$->append($2);
+		$$->append($6);
+		
+		AST::ASTNode *method = new AST::ASTNode(Method);
+		method->sType_ = Constructor;
+		AST::ASTNode *methName = new AST::ASTNode(Ident, $2->strVal_);
+		methName->sType_ = MethodName;
+		method->append(methName);
+
+		AST::ASTNode* ret = new AST::ASTNode(Ident, ReturnTyp, $2->strVal_);
+
+		method->append($4);
+		method->append(ret);
+		method->append($8);
+		$$->append(method);
+		$$->append($9);
+	};
+
+extends:
+	%empty {
+		$$ = new AST::ASTNode(Ident, SuperName, "Obj");
+	}
+	| EXTENDS ident {
+		$2->sType_ = SuperName;
+		$$ = $2;
+	};
+
+/*---------------------------------------------------------------------------------*/
+methods:
+	%empty { $$ = new AST::ASTNode(Methods); }
+	| methods method {
+		$$ = $1;
+		$1->append($2);
+	};
+
+method:
+	DEF ident '(' formal_arg_list ')' ':' ident statement_block { 
+		$$ = new AST::ASTNode(Method); 
+		$2->sType_ = MethodName;
+		$$->append($2);
+		$$->append($4);
+		$7->sType_ = ReturnTyp;
+		$$->append($7);
+		$8->sType_ = Statements;
+		$$->append($8);
+	}
+	
+	| DEF ident '('formal_arg_list ')' statement_block {
+		$$ = new AST::ASTNode(Method);
+		$2->sType_ = MethodName;
+		$$->append($2);
+		$$->append($4);
+		AST::ASTNode* ret = new AST::ASTNode(Ident, "Nothing");
+		ret->sType_ = ReturnTyp;
+		$$->append(ret);
+		$6->sType_ = Statements;
+		$$->append($6);
+	};
+
+/*---------------------------------------------------------------------------------*/
+formal_arg_list:
+	%empty { $$ = new AST::ASTNode(Formal_args); }
+	| formal_args { $$ = $1; };
+
+formal_args:
+	formal_args ',' formal_arg {
+		$$ = $1;
+		$1->append($3);
+	}
+	| formal_arg {
+		$$ = new AST::ASTNode(Formal_args);
+		$$->append($1);
+		
+	};
+
+formal_arg:
+	ident ':'ident {
+		$$ = new AST::ASTNode(ClassArgs);
+		$1->sType_ = VarIdent;
+		$$->append($1);
+		$3->sType_ = TypeIdent;
+		$$->append($3);
+	};
+
+/*---------------------------------------------------------------------------------*/
+statement:
+	IF r_expr statement_block elifs else { 
+		$$ = new AST::ASTNode(If);
+		$$->append($2);
+		$3->sType_ = TrueState;
+		$$->append($3);
+		$$->append($4);
+		$$->append($5);
+	};
+elifs:
+	%empty {
+		$$ = new AST::ASTNode(Block);
+	}
+	| elifs elif { 
+		$$ = new AST::ASTNode(Block);
+		$$->append($1);
+		$$->append($2);
+	};
+elif:
+	ELIF r_expr statement_block { 
+		$$ = new AST::ASTNode(If);
+		$$->append($2);
+		$3->sType_ = FalseState;
+		$$->append($3);
+		
+	};
+else:
+	%empty { $$ = new AST::ASTNode(Block);
+	}
+	| ELSE statement_block {
+<<<<<<< HEAD
+		$2->sType_ = FalseState;
+		$$ = $2; 
+=======
+		$$ = new AST::ASTNode(Block);
+		$2->sType_ = FalseState;
+		$$->append($2); 
+>>>>>>> origin/master
+	};
+
+/*---------------------------------------------------------------------------------*/
+statement_block:
+	 '{' statements '}' {
+		$$ = $2;
+       	  };
+
+statements:
+	%empty { 
+		$$ = new AST::ASTNode(Block);
+		$$->sType_ = Statements;
+	}
+	| statements statement { 
+		$$ = $1;
+		$1->append($2);
+	};
+
+statement:
+	WHILE r_expr statement_block {
+		$$ = new AST::ASTNode(While);
+		$$->append($2);
+		$$->append($3);
+	};
+
+statement:
+	l_expr ':' ident '=' r_expr ';' {
+		$$ = new AST::ASTNode(Assign);
+		$$->append($1);
+<<<<<<< HEAD
+		$1->append($3);
+=======
+		$$->append($3);
+>>>>>>> origin/master
+		$5->sType_ = R_expr;
+		$$->append($5);
+	}
+	| l_expr '=' r_expr ';' {
+		$$ = new AST::ASTNode(Assign);
+		$$->append($1);
+		$3->sType_ = R_expr;
+		$$->append($3);
+	}
+	| r_expr ';' {
+		$$ = $1;
+	};
+
+statement:
+	RETURN r_expr ';'{
+		$$ = new AST::ASTNode(Return);
+		$2->sType_ = R_expr;
+		$$->append($2);
+	};
+
+statement:
+	typecase {
+		$$ = $1;
+	};
+
+/*---------------------------------------------------------------------------------*/
+typecase:
+	TYPECASE r_expr '{' type_alt '}' {
+		$$ = new AST::ASTNode(Typecase);
+		$$->append($2);
+		$$->append($4);
+	}
+
+type_alt:
+	ident ':' ident statements {
+		$$ = new AST::ASTNode(Type_alt);
+		$$->append($1);
+		$$->append($3);
+		$$->append($4);
+	};
+
+/*---------------------------------------------------------------------------------*/
+l_expr:
+	ident  {
+		$$ = $1;
+		$$->sType_ = Loc;
+	}
+	| r_expr '.' ident {
+		$$ = new AST::ASTNode(Dot);
+		$$->sType_ = L_expr;
+		$$->append($1);
+		$3->sType_ = R_expr;
+		$$->append($3);
+	};
+
+/*---------------------------------------------------------------------------------*/
+r_expr:
+	STR_LIT { 
+		$$ = new AST::ASTNode(Strconst, $1);
+	}
+	| INT_LIT {
+		$$ = new AST::ASTNode(Intconst, $1);
+	}
+	| l_expr {
+		$$ = new AST::ASTNode(Load);
+		$$->append($1);
+		$$->sType_ = L_expr;
+	}
+	| r_expr '+' r_expr { 
+		$$ = new AST::ASTNode(Call);
+		$$->sType_ = Plus;
+		$$->append($1);
+<<<<<<< HEAD
+		AST::ASTNode* nm = new AST::ASTNode(Plus);
+=======
+		AST::ASTNode* nm = new AST::ASTNode(Ident, "Plus");
+>>>>>>> origin/master
+		nm->sType_ = Method;
+		$$->append(nm);
+		AST::ASTNode *a = new AST::ASTNode(Actual_args);
+		a->append($3);
+		$$->append(a);
+	 }
+	| r_expr '-' r_expr {
+		$$ = new AST::ASTNode(Call);
+		$$->sType_ = Minus;
+		$$->append($1);
+<<<<<<< HEAD
+		AST::ASTNode* nm = new AST::ASTNode(Minus);
+=======
+		AST::ASTNode* nm = new AST::ASTNode(Ident, "Minus");
+>>>>>>> origin/master
+		nm->sType_ = Method;
+		$$->append(nm);
+		AST::ASTNode *a = new AST::ASTNode(Actual_args);
+		a->append($3);
+		$$->append(a);
+	}
+	| r_expr '*' r_expr {
+		$$ = new AST::ASTNode(Call);
+		$$->sType_ = Mult;
+		$$->append($1);
+<<<<<<< HEAD
+		AST::ASTNode* nm = new AST::ASTNode(Mult);
+=======
+		AST::ASTNode* nm = new AST::ASTNode(Ident, "Mult");
+>>>>>>> origin/master
+		nm->sType_ = Method;
+		$$->append(nm);
+		AST::ASTNode *a = new AST::ASTNode(Actual_args);
+		a->append($3);
+		$$->append(a);
+	}
+	| r_expr '/' r_expr {
+		$$ = new AST::ASTNode(Call);
+		$$->sType_ = Div;
+		$$->append($1);
+<<<<<<< HEAD
+		AST::ASTNode* nm = new AST::ASTNode(Div);
+=======
+		AST::ASTNode* nm = new AST::ASTNode(Ident, "Div");
+>>>>>>> origin/master
+		nm->sType_ = Method;
+		$$->append(nm);
+		AST::ASTNode *a = new AST::ASTNode(Actual_args);
+		a->append($3);
+		$$->append(a);
+	}
+	| '-' r_expr {
+		$$ = new AST::ASTNode(Minus);
+		$$->append($2);
+	}
+	| '(' actual_args ')' {
+		$$ = $2;
+	};
+
+r_expr:
+
+	 r_expr EQUALS r_expr {
+		$$ = new AST::ASTNode(Call);
+		$$->sType_ = Equals;
+		$$->append($1);
+<<<<<<< HEAD
+		AST::ASTNode* nm = new AST::ASTNode(Equals);
+=======
+		AST::ASTNode* nm = new AST::ASTNode(Ident, "Equals");
+>>>>>>> origin/master
+		nm->sType_ = Method;
+		$$->append(nm);
+		AST::ASTNode *a = new AST::ASTNode(Actual_args);
+		a->append($3);
+		$$->append(a);
+	}
+	| r_expr ATMOST r_expr {
+		$$ = new AST::ASTNode(Call);
+		$$->sType_ = AtMost;
+		$$->append($1);
+<<<<<<< HEAD
+		AST::ASTNode* nm = new AST::ASTNode(AtMost);
+=======
+		AST::ASTNode* nm = new AST::ASTNode(Ident, "AtMost");
+>>>>>>> origin/master
+		nm->sType_ = Method;
+		$$->append(nm);
+		AST::ASTNode *a = new AST::ASTNode(Actual_args);
+		a->append($3);
+		$$->append(a);
+	}
+	| r_expr ATLEAST r_expr {
+		$$ = new AST::ASTNode(Call);
+		$$->sType_ = AtLeast;
+		$$->append($1);
+<<<<<<< HEAD
+		AST::ASTNode* nm = new AST::ASTNode(AtLeast);
+=======
+		AST::ASTNode* nm = new AST::ASTNode(Ident, "AtLeast");
+>>>>>>> origin/master
+		nm->sType_ = Method;
+		$$->append(nm);
+		AST::ASTNode *a = new AST::ASTNode(Actual_args);
+		a->append($3);
+		$$->append(a);
+	}
+	| r_expr '<' r_expr {
+		$$ = new AST::ASTNode(Call);
+		$$->sType_ = Less;
+		$$->append($1);
+<<<<<<< HEAD
+		AST::ASTNode* nm = new AST::ASTNode(Less);
+=======
+		AST::ASTNode* nm = new AST::ASTNode(Ident, "Less");
+>>>>>>> origin/master
+		nm->sType_ = Method;
+		$$->append(nm);
+		AST::ASTNode *a = new AST::ASTNode(Actual_args);
+		a->append($3);
+		$$->append(a);
+	}
+	| r_expr '>' r_expr {
+		$$ = new AST::ASTNode(Call);
+		$$->sType_ = Greater;
+		$$->append($1);
+<<<<<<< HEAD
+		AST::ASTNode* nm = new AST::ASTNode(Greater);
+=======
+		AST::ASTNode* nm = new AST::ASTNode(Ident, "Greater");
+>>>>>>> origin/master
+		nm->sType_ = Method;
+		$$->append(nm);
+		AST::ASTNode *a = new AST::ASTNode(Actual_args);
+		a->append($3);
+		$$->append(a);
+	}
+	| r_expr AND r_expr {
+		$$ = new AST::ASTNode(Call);
+		$$->sType_ = And;
+		$$->append($1);
+<<<<<<< HEAD
+		AST::ASTNode* nm = new AST::ASTNode(And);
+=======
+		AST::ASTNode* nm = new AST::ASTNode(Ident, "And");
+>>>>>>> origin/master
+		nm->sType_ = Method;
+		$$->append(nm);
+		AST::ASTNode *a = new AST::ASTNode(Actual_args);
+		a->append($3);
+		$$->append(a);
+	}
+	| r_expr OR r_expr { 
+		$$ = new AST::ASTNode(Call);
+		$$->sType_ = Or;
+		$$->append($1);
+<<<<<<< HEAD
+		AST::ASTNode* nm = new AST::ASTNode(Or);
+=======
+		AST::ASTNode* nm = new AST::ASTNode(Ident, "Or");
+>>>>>>> origin/master
+		nm->sType_ = Method;
+		$$->append(nm);
+		AST::ASTNode *a = new AST::ASTNode(Actual_args);
+		a->append($3);
+		$$->append(a);
+	} 
+	| NOT r_expr {
+		$$ = new AST::ASTNode(Not);
+		$$->append($2);
+	};
+
+r_expr:
+	 r_expr '.' ident '(' actual_args ')' {
+		$$ = new AST::ASTNode(Call);
+		$$->append($1);
+		$3->sType_ = Method;
+		$$->append($3);
+		$$->append($5);
+	}
+	
+	| ident '(' actual_args ')'{
+		$$ = new AST::ASTNode(Constructor);
+		$$->append($1);
+		$$->append($3);
+	};
+
+
+/*---------------------------------------------------------------------------------*/
+actual_args:
+	%empty { $$ = new AST::ASTNode(Actual_args); }
+	
+	| actual_args ',' r_expr {
+		$$ = new AST::ASTNode(Actual_args);
+		$$->append($1);
+		$$->append($3);
+	}
+	| r_expr {
+		$$ = new AST::ASTNode(MethodArg);
+		$$->append($1);
+	};
+
+/*---------------------------------------------------------------------------------*/
+ident:
+	IDENT {
+		$$ = new AST::ASTNode(Ident, $1);
+	};
+/*---------------------------------------------------------------------------------*/
+%%
+#include "Messages.h"
+
+void yy::parser::error(const location_type& loc, const std::string& msg)
+{
+  report::error_at(loc, msg);
+}
+
+void dump(AST::ASTNode* n) {
+    
+}

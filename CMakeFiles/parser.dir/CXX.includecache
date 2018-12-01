@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/trevorbergstrom/NewCompiler/ASTNode.h
+string
+-
+iostream
+-
+vector
+-
+EvalContext.h
+/Users/trevorbergstrom/NewCompiler/EvalContext.h
+CodegenContext.h
+/Users/trevorbergstrom/NewCompiler/CodegenContext.h
+map
+-
+
+/Users/trevorbergstrom/NewCompiler/CodegenContext.h
+ostream
+-
+
+/Users/trevorbergstrom/NewCompiler/EvalContext.h
+unordered_map
+-
+
+/Users/trevorbergstrom/NewCompiler/TypeCheck.cpp
+TypeCheck.h
+/Users/trevorbergstrom/NewCompiler/TypeCheck.h
+
+/Users/trevorbergstrom/NewCompiler/TypeCheck.h
+ASTNode.h
+/Users/trevorbergstrom/NewCompiler/ASTNode.h
+

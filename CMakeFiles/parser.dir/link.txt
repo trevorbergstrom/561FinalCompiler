@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+/Library/Developer/CommandLineTools/usr/bin/c++   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/parser.dir/quack.tab.cxx.o CMakeFiles/parser.dir/lex.yy.cpp.o CMakeFiles/parser.dir/parser.cpp.o CMakeFiles/parser.dir/ASTNode.cpp.o CMakeFiles/parser.dir/Messages.cpp.o CMakeFiles/parser.dir/TypeCheck.cpp.o CMakeFiles/parser.dir/CodeGenerator.cpp.o  -o parser /usr/local/lib/libreflex.a 
+=======
+/Library/Developer/CommandLineTools/usr/bin/c++   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/parser.dir/quack.tab.cxx.o CMakeFiles/parser.dir/lex.yy.cpp.o CMakeFiles/parser.dir/parser.cpp.o CMakeFiles/parser.dir/ASTNode.cpp.o CMakeFiles/parser.dir/Messages.cpp.o CMakeFiles/parser.dir/TypeCheck.cpp.o  -o parser /usr/local/lib/libreflex.a 
+>>>>>>> origin/master

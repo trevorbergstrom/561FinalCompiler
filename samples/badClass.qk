@@ -1,0 +1,12 @@
+class Pt(x: Int) {
+	this.x = x;
+}
+
+class Pt2(x: Int) extends Pt {
+	this.x = x;
+}
+
+class P3(x: Int) extends Assholes {
+	this.x = x;
+}
+

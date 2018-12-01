@@ -1,0 +1,17 @@
+/* this code has a duplicate method in class Pt. should fail type checking */
+
+class Pt(x: Int) {
+	this.x = x;
+
+	def m1(y: Int) {
+		this.x = y;
+	}
+
+	def m1(y: Int) {
+		this.x = y;
+	}
+}
+
+class Pt2(x: Int) extends Pt {
+	this.x = x;
+}

@@ -1,0 +1,4 @@
+/Users/trevorbergstrom/NewCompiler/CMakeFiles/rebuild_cache.dir
+/Users/trevorbergstrom/NewCompiler/CMakeFiles/edit_cache.dir
+/Users/trevorbergstrom/NewCompiler/CMakeFiles/lexer.dir
+/Users/trevorbergstrom/NewCompiler/CMakeFiles/parser.dir
