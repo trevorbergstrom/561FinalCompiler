@@ -208,10 +208,7 @@ else:
 	}
 	| ELSE statement_block {
 		$2->sType_ = FalseState;
-		$$ = $2; 
-		$$ = new AST::ASTNode(Block);
-		$2->sType_ = FalseState;
-		$$->append($2); 
+		$$ = $2;  
 	};
 
 /*---------------------------------------------------------------------------------*/

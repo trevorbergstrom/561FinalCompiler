@@ -349,8 +349,8 @@ class_Int the_class_Int = &the_class_Int_struct;
  * used by compiler and not otherwise available in 
  * Quack programs. 
  */
-
 obj_Int int_literal(int n) {
+	//printf("what the fuck is going on\n");
   obj_Int boxed = new_Int();
   boxed->value = n;
   return boxed;

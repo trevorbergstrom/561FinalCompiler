@@ -69,6 +69,7 @@ int main(int argc, char **argv) {
              std::cout << "Parsed!\n";
              SynTree::SymbolTree* ST = new SynTree::SymbolTree();
             if(ST->buildSyntaxTree(root)) {
+                root->printNode(0);
                 printf("Limited type check passed. All classes and methods ok!\n");
                 GenCode(ST);
                 printf("Code produced. Run code.c file!\n");

@@ -372,6 +372,7 @@ string GenStatements(SynTree::Method* methodq) {
 /**************************************************/
 string GenStatements_AST(AST::ASTNode* methodq) {
 	string ret = "";
+
 	int x = methodq->children.size();
 
 	for(int i = 0; i < x; i++) {
@@ -419,10 +420,6 @@ string GenIf(AST::ASTNode* stmnt) {
 			string boolname = "tempBool";
 			boolname += num;
 
-			/*
-			ret += "obj_Boolean ";
-			ret += boolname;
-			*/
 			if(left) {
 				if(strcmp(left->getNodeType(Ident)->strVal_, "true") == 0) {
 					ret += "obj_Boolean ";
@@ -467,7 +464,9 @@ string GenIf(AST::ASTNode* stmnt) {
 
 				functString += leftName;
 
-				if(method_type->type_ == Equals) {
+
+				if(call_node->sType_ == Equals) {
+					printf("ASS\n");
 					functString += "->clazz->EQUALS((obj_Int) ";
 					functString += leftName;
 					functString += ", (obj_Obj) ";
@@ -532,6 +531,7 @@ string GenIf(AST::ASTNode* stmnt) {
 			ret += falseLabel;
 			ret += ":; \n\t";
 			//ret += GenAssign(falseBlk->getNodeType(Assign));
+
 			ret += GenStatements_AST(falseBlk);
 			ret += endLabel;
 			ret += ":;\n";
