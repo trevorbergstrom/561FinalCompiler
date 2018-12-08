@@ -59,10 +59,10 @@ RM = /usr/local/Cellar/cmake/3.12.3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/trevorbergstrom/NewCompiler
+CMAKE_SOURCE_DIR = /Users/trevorbergstrom/desktop/561FinalCompiler
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/trevorbergstrom/NewCompiler
+CMAKE_BINARY_DIR = /Users/trevorbergstrom/desktop/561FinalCompiler
 
 #=============================================================================
 # Target rules for target CMakeFiles/lexer.dir
@@ -71,11 +71,7 @@ CMAKE_BINARY_DIR = /Users/trevorbergstrom/NewCompiler
 CMakeFiles/lexer.dir/all:
 	$(MAKE) -f CMakeFiles/lexer.dir/build.make CMakeFiles/lexer.dir/depend
 	$(MAKE) -f CMakeFiles/lexer.dir/build.make CMakeFiles/lexer.dir/build
-<<<<<<< HEAD
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target lexer"
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target lexer"
->>>>>>> origin/master
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target lexer"
 .PHONY : CMakeFiles/lexer.dir/all
 
 # Include target in all.
@@ -85,13 +81,9 @@ all: CMakeFiles/lexer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lexer.dir/rule: cmake_check_build_system
-<<<<<<< HEAD
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/trevorbergstrom/NewCompiler/CMakeFiles 9
-=======
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/trevorbergstrom/NewCompiler/CMakeFiles 8
->>>>>>> origin/master
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lexer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/trevorbergstrom/NewCompiler/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles 0
 .PHONY : CMakeFiles/lexer.dir/rule
 
 # Convenience name for target.
@@ -116,11 +108,7 @@ clean: CMakeFiles/lexer.dir/clean
 CMakeFiles/parser.dir/all:
 	$(MAKE) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/depend
 	$(MAKE) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/build
-<<<<<<< HEAD
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18,19 "Built target parser"
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=9,10,11,12,13,14,15,16,17 "Built target parser"
->>>>>>> origin/master
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18 "Built target parser"
 .PHONY : CMakeFiles/parser.dir/all
 
 # Include target in all.
@@ -130,13 +118,9 @@ all: CMakeFiles/parser.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/parser.dir/rule: cmake_check_build_system
-<<<<<<< HEAD
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/trevorbergstrom/NewCompiler/CMakeFiles 10
-=======
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/trevorbergstrom/NewCompiler/CMakeFiles 9
->>>>>>> origin/master
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/parser.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/trevorbergstrom/NewCompiler/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles 0
 .PHONY : CMakeFiles/parser.dir/rule
 
 # Convenience name for target.

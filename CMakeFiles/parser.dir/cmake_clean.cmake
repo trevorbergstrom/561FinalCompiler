@@ -12,15 +12,13 @@ file(REMOVE_RECURSE
   "CMakeFiles/parser.dir/ASTNode.cpp.o"
   "CMakeFiles/parser.dir/Messages.cpp.o"
   "CMakeFiles/parser.dir/TypeCheck.cpp.o"
-<<<<<<< HEAD
   "CMakeFiles/parser.dir/CodeGenerator.cpp.o"
-=======
->>>>>>> origin/master
+  "CMakeFiles/parser.dir/Builtins.c.o"
   "parser.pdb"
   "parser"
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang C CXX)
   include(CMakeFiles/parser.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

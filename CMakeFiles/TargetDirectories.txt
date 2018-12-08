@@ -1,4 +1,4 @@
-/Users/trevorbergstrom/NewCompiler/CMakeFiles/rebuild_cache.dir
-/Users/trevorbergstrom/NewCompiler/CMakeFiles/edit_cache.dir
-/Users/trevorbergstrom/NewCompiler/CMakeFiles/lexer.dir
-/Users/trevorbergstrom/NewCompiler/CMakeFiles/parser.dir
+/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles/rebuild_cache.dir
+/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles/edit_cache.dir
+/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles/lexer.dir
+/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles/parser.dir

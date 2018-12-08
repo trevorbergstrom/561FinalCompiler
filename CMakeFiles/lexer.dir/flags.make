@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/trevorbergstrom/NewCompiler -I/usr/local/include/reflex 
+CXX_INCLUDES = -I/Users/trevorbergstrom/desktop/561FinalCompiler -I/usr/local/include/reflex 
 

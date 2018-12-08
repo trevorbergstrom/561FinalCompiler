@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.12.3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/trevorbergstrom/NewCompiler
+CMAKE_SOURCE_DIR = /Users/trevorbergstrom/desktop/561FinalCompiler
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/trevorbergstrom/NewCompiler
+CMAKE_BINARY_DIR = /Users/trevorbergstrom/desktop/561FinalCompiler
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/trevorbergstrom/NewCompiler/CMakeFiles /Users/trevorbergstrom/NewCompiler/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles /Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/trevorbergstrom/NewCompiler/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -166,13 +166,39 @@ ASTNode.cpp.s:
 	$(MAKE) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/ASTNode.cpp.s
 .PHONY : ASTNode.cpp.s
 
+Builtins.o: Builtins.c.o
+
+.PHONY : Builtins.o
+
+# target to build an object file
+Builtins.c.o:
+	$(MAKE) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/Builtins.c.o
+.PHONY : Builtins.c.o
+
+Builtins.i: Builtins.c.i
+
+.PHONY : Builtins.i
+
+# target to preprocess a source file
+Builtins.c.i:
+	$(MAKE) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/Builtins.c.i
+.PHONY : Builtins.c.i
+
+Builtins.s: Builtins.c.s
+
+.PHONY : Builtins.s
+
+# target to generate assembly for a file
+Builtins.c.s:
+	$(MAKE) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/Builtins.c.s
+.PHONY : Builtins.c.s
+
 CodeGenerator.o: CodeGenerator.cpp.o
 
 .PHONY : CodeGenerator.o
 
 # target to build an object file
 CodeGenerator.cpp.o:
-	$(MAKE) -f CMakeFiles/lexer.dir/build.make CMakeFiles/lexer.dir/CodeGenerator.cpp.o
 	$(MAKE) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/CodeGenerator.cpp.o
 .PHONY : CodeGenerator.cpp.o
 
@@ -182,7 +208,6 @@ CodeGenerator.i: CodeGenerator.cpp.i
 
 # target to preprocess a source file
 CodeGenerator.cpp.i:
-	$(MAKE) -f CMakeFiles/lexer.dir/build.make CMakeFiles/lexer.dir/CodeGenerator.cpp.i
 	$(MAKE) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/CodeGenerator.cpp.i
 .PHONY : CodeGenerator.cpp.i
 
@@ -192,7 +217,6 @@ CodeGenerator.s: CodeGenerator.cpp.s
 
 # target to generate assembly for a file
 CodeGenerator.cpp.s:
-	$(MAKE) -f CMakeFiles/lexer.dir/build.make CMakeFiles/lexer.dir/CodeGenerator.cpp.s
 	$(MAKE) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/CodeGenerator.cpp.s
 .PHONY : CodeGenerator.cpp.s
 
@@ -232,7 +256,6 @@ TypeCheck.o: TypeCheck.cpp.o
 
 # target to build an object file
 TypeCheck.cpp.o:
-	$(MAKE) -f CMakeFiles/lexer.dir/build.make CMakeFiles/lexer.dir/TypeCheck.cpp.o
 	$(MAKE) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/TypeCheck.cpp.o
 .PHONY : TypeCheck.cpp.o
 
@@ -242,7 +265,6 @@ TypeCheck.i: TypeCheck.cpp.i
 
 # target to preprocess a source file
 TypeCheck.cpp.i:
-	$(MAKE) -f CMakeFiles/lexer.dir/build.make CMakeFiles/lexer.dir/TypeCheck.cpp.i
 	$(MAKE) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/TypeCheck.cpp.i
 .PHONY : TypeCheck.cpp.i
 
@@ -252,7 +274,6 @@ TypeCheck.s: TypeCheck.cpp.s
 
 # target to generate assembly for a file
 TypeCheck.cpp.s:
-	$(MAKE) -f CMakeFiles/lexer.dir/build.make CMakeFiles/lexer.dir/TypeCheck.cpp.s
 	$(MAKE) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/TypeCheck.cpp.s
 .PHONY : TypeCheck.cpp.s
 
@@ -380,6 +401,9 @@ help:
 	@echo "... ASTNode.o"
 	@echo "... ASTNode.i"
 	@echo "... ASTNode.s"
+	@echo "... Builtins.o"
+	@echo "... Builtins.i"
+	@echo "... Builtins.s"
 	@echo "... CodeGenerator.o"
 	@echo "... CodeGenerator.i"
 	@echo "... CodeGenerator.s"

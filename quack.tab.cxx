@@ -49,7 +49,7 @@
 
 #line 51 "quack.tab.cxx" // lalr1.cc:415
 // Unqualified %code blocks.
-#line 19 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:416
+#line 19 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:416
 
 	#include "lex.yy.h"
 	#undef yylex
@@ -573,11 +573,7 @@ namespace yy {
           switch (yyn)
             {
   case 2:
-<<<<<<< HEAD
-#line 76 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 75 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 76 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     { 
 		(yylhs.value.node) = new AST::ASTNode(Program);
 		(yylhs.value.node)->append((yystack_[1].value.node));
@@ -589,21 +585,13 @@ namespace yy {
     break;
 
   case 3:
-<<<<<<< HEAD
-#line 85 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 84 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 85 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     { (yylhs.value.node) = new AST::ASTNode(Classes); }
 #line 591 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 4:
-<<<<<<< HEAD
-#line 86 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 85 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 86 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     { 
 		(yystack_[1].value.node)->append((yystack_[0].value.node));
 		(yylhs.value.node) = (yystack_[1].value.node); 
@@ -612,29 +600,7 @@ namespace yy {
     break;
 
   case 5:
-<<<<<<< HEAD
-#line 92 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 91 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-    { 
-		(yylhs.value.node) = new AST::ASTNode(Block);
-		(yylhs.value.node)->sType_ = Statements;
-	}
-#line 609 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 6:
-#line 95 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-    { 
-		(yylhs.value.node) = (yystack_[1].value.node);
-		(yystack_[1].value.node)->append((yystack_[0].value.node));
-	}
-#line 618 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 7:
-#line 101 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 92 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Class);
 		(yystack_[8].value.node)->sType_ = ClassName;
@@ -655,12 +621,11 @@ namespace yy {
 		(yylhs.value.node)->append(method);
 		(yylhs.value.node)->append((yystack_[1].value.node));
 	}
-<<<<<<< HEAD
 #line 625 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 6:
-#line 114 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
+#line 114 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Ident, SuperName, "Obj");
 	}
@@ -668,73 +633,35 @@ namespace yy {
     break;
 
   case 7:
-#line 117 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 643 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 8:
-#line 123 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-    {
-		(yylhs.value.node) = new AST::ASTNode(Ident, SuperName, "Obj");
-	}
-#line 651 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 9:
-#line 126 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 117 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yystack_[0].value.node)->sType_ = SuperName;
 		(yylhs.value.node) = (yystack_[0].value.node);
 	}
-<<<<<<< HEAD
 #line 642 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 8:
-#line 124 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
+#line 124 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     { (yylhs.value.node) = new AST::ASTNode(Methods); }
 #line 648 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 9:
-#line 125 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 660 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 10:
-#line 133 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-    { (yylhs.value.node) = new AST::ASTNode(Methods); }
-#line 666 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 11:
-#line 134 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 125 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = (yystack_[1].value.node);
 		(yystack_[1].value.node)->append((yystack_[0].value.node));
 	}
-<<<<<<< HEAD
 #line 657 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 10:
-#line 131 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 675 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 12:
-#line 140 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 131 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     { 
 		(yylhs.value.node) = new AST::ASTNode(Method); 
 		(yystack_[6].value.node)->sType_ = MethodName;
 		(yylhs.value.node)->append((yystack_[6].value.node));
-<<<<<<< HEAD
 		(yylhs.value.node)->append((yystack_[4].value.node));
 		(yystack_[1].value.node)->sType_ = ReturnTyp;
 		(yylhs.value.node)->append((yystack_[1].value.node));
@@ -745,7 +672,7 @@ namespace yy {
     break;
 
   case 11:
-#line 142 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
+#line 142 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Method);
 		(yystack_[4].value.node)->sType_ = MethodName;
@@ -761,88 +688,38 @@ namespace yy {
     break;
 
   case 12:
-#line 156 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
+#line 156 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     { (yylhs.value.node) = new AST::ASTNode(Formal_args); }
 #line 694 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 13:
-#line 157 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
+#line 157 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     { (yylhs.value.node) = (yystack_[0].value.node); }
 #line 700 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 14:
-#line 160 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-		(yylhs.value.node)->append((yystack_[4].value.node));
-		(yystack_[1].value.node)->sType_ = ReturnTyp;
-		(yylhs.value.node)->append((yystack_[1].value.node));
-		(yystack_[0].value.node)->sType_ = Statements;
-		(yylhs.value.node)->append((yystack_[0].value.node));
-	}
-#line 690 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 13:
-#line 151 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-    {
-		(yylhs.value.node) = new AST::ASTNode(Method);
-		(yystack_[4].value.node)->sType_ = MethodName;
-		(yylhs.value.node)->append((yystack_[4].value.node));
-		(yylhs.value.node)->append((yystack_[2].value.node));
-		AST::ASTNode* ret = new AST::ASTNode(Ident, "Nothing");
-		ret->sType_ = ReturnTyp;
-		(yylhs.value.node)->append(ret);
-		(yystack_[0].value.node)->sType_ = Statements;
-		(yylhs.value.node)->append((yystack_[0].value.node));
-	}
-#line 706 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 14:
-#line 164 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-    { (yylhs.value.node) = new AST::ASTNode(Formal_args); }
-#line 712 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 15:
-#line 165 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-    { (yylhs.value.node) = (yystack_[0].value.node); }
-#line 718 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 16:
-#line 168 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 160 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = (yystack_[2].value.node);
 		(yystack_[2].value.node)->append((yystack_[0].value.node));
 	}
-<<<<<<< HEAD
 #line 709 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 15:
-#line 164 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 727 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 17:
-#line 172 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 164 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Formal_args);
 		(yylhs.value.node)->append((yystack_[0].value.node));
 		
-<<<<<<< HEAD
 	}
 #line 719 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 16:
-#line 171 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
+#line 171 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(ClassArgs);
 		(yystack_[2].value.node)->sType_ = VarIdent;
@@ -854,27 +731,7 @@ namespace yy {
     break;
 
   case 17:
-#line 181 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-	}
-#line 737 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 18:
-#line 179 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-    {
-		(yylhs.value.node) = new AST::ASTNode(ClassArgs);
-		(yystack_[2].value.node)->sType_ = VarIdent;
-		(yylhs.value.node)->append((yystack_[2].value.node));
-		(yystack_[0].value.node)->sType_ = TypeIdent;
-		(yylhs.value.node)->append((yystack_[0].value.node));
-	}
-#line 749 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 19:
-#line 188 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 181 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     { 
 		(yylhs.value.node) = new AST::ASTNode(If);
 		(yylhs.value.node)->append((yystack_[3].value.node));
@@ -883,12 +740,11 @@ namespace yy {
 		(yylhs.value.node)->append((yystack_[1].value.node));
 		(yylhs.value.node)->append((yystack_[0].value.node));
 	}
-<<<<<<< HEAD
 #line 744 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 18:
-#line 190 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
+#line 190 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Block);
 	}
@@ -896,40 +752,17 @@ namespace yy {
     break;
 
   case 19:
-#line 193 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 762 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 20:
-#line 197 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-    {
-		(yylhs.value.node) = new AST::ASTNode(Block);
-	}
-#line 770 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 21:
-#line 200 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 193 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     { 
 		(yylhs.value.node) = new AST::ASTNode(Block);
 		(yylhs.value.node)->append((yystack_[1].value.node));
 		(yylhs.value.node)->append((yystack_[0].value.node));
 	}
-<<<<<<< HEAD
 #line 762 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 20:
-#line 199 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 780 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 22:
-#line 206 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 199 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     { 
 		(yylhs.value.node) = new AST::ASTNode(If);
 		(yylhs.value.node)->append((yystack_[1].value.node));
@@ -937,235 +770,146 @@ namespace yy {
 		(yylhs.value.node)->append((yystack_[0].value.node));
 		
 	}
-<<<<<<< HEAD
 #line 774 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 21:
-#line 207 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
+#line 207 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     { (yylhs.value.node) = new AST::ASTNode(Block);
 	}
 #line 781 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 22:
-#line 209 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
+#line 209 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yystack_[0].value.node)->sType_ = FalseState;
 		(yylhs.value.node) = (yystack_[0].value.node); 
-	}
-#line 790 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 23:
-#line 216 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-    {
-		(yylhs.value.node) = (yystack_[1].value.node);
-       	  }
-#line 798 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 24:
-#line 221 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-    { 
-		(yylhs.value.node) = new AST::ASTNode(Block);
-		(yylhs.value.node)->sType_ = Statements;
-	}
-#line 807 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 25:
-#line 225 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-    { 
-		(yylhs.value.node) = (yystack_[1].value.node);
-		(yystack_[1].value.node)->append((yystack_[0].value.node));
-	}
-#line 816 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 26:
-#line 231 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 792 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 23:
-#line 214 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-    { (yylhs.value.node) = new AST::ASTNode(Block);
-	}
-#line 799 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 24:
-#line 216 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-    {
 		(yylhs.value.node) = new AST::ASTNode(Block);
 		(yystack_[0].value.node)->sType_ = FalseState;
 		(yylhs.value.node)->append((yystack_[0].value.node)); 
 	}
-#line 809 "quack.tab.cxx" // lalr1.cc:870
+#line 793 "quack.tab.cxx" // lalr1.cc:870
     break;
 
-  case 25:
-#line 223 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
+  case 23:
+#line 219 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = (yystack_[1].value.node);
        	  }
-#line 817 "quack.tab.cxx" // lalr1.cc:870
+#line 801 "quack.tab.cxx" // lalr1.cc:870
+    break;
+
+  case 24:
+#line 224 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
+    { 
+		(yylhs.value.node) = new AST::ASTNode(Block);
+		(yylhs.value.node)->sType_ = Statements;
+	}
+#line 810 "quack.tab.cxx" // lalr1.cc:870
+    break;
+
+  case 25:
+#line 228 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
+    { 
+		(yylhs.value.node) = (yystack_[1].value.node);
+		(yystack_[1].value.node)->append((yystack_[0].value.node));
+	}
+#line 819 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 26:
-#line 228 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 234 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(While);
 		(yylhs.value.node)->append((yystack_[1].value.node));
 		(yylhs.value.node)->append((yystack_[0].value.node));
 	}
-<<<<<<< HEAD
-#line 826 "quack.tab.cxx" // lalr1.cc:870
+#line 829 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 27:
-#line 238 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
+#line 241 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Assign);
 		(yylhs.value.node)->append((yystack_[5].value.node));
 		(yystack_[5].value.node)->append((yystack_[3].value.node));
-		(yystack_[1].value.node)->sType_ = R_expr;
-		(yylhs.value.node)->append((yystack_[1].value.node));
-	}
-#line 838 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 28:
-#line 245 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 827 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 27:
-#line 235 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-    {
-		(yylhs.value.node) = new AST::ASTNode(Assign);
-		(yylhs.value.node)->append((yystack_[5].value.node));
 		(yylhs.value.node)->append((yystack_[3].value.node));
 		(yystack_[1].value.node)->sType_ = R_expr;
 		(yylhs.value.node)->append((yystack_[1].value.node));
 	}
-#line 839 "quack.tab.cxx" // lalr1.cc:870
+#line 842 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 28:
-#line 242 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 249 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Assign);
 		(yylhs.value.node)->append((yystack_[3].value.node));
 		(yystack_[1].value.node)->sType_ = R_expr;
 		(yylhs.value.node)->append((yystack_[1].value.node));
 	}
-<<<<<<< HEAD
-#line 849 "quack.tab.cxx" // lalr1.cc:870
+#line 853 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 29:
-#line 251 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
+#line 255 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = (yystack_[1].value.node);
 	}
-#line 857 "quack.tab.cxx" // lalr1.cc:870
+#line 861 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 30:
-#line 256 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 850 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 29:
-#line 248 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-    {
-		(yylhs.value.node) = (yystack_[1].value.node);
-	}
-#line 858 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 30:
-#line 253 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 260 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Return);
 		(yystack_[1].value.node)->sType_ = R_expr;
 		(yylhs.value.node)->append((yystack_[1].value.node));
 	}
-#line 867 "quack.tab.cxx" // lalr1.cc:870
+#line 871 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 31:
-<<<<<<< HEAD
-#line 263 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 260 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 267 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = (yystack_[0].value.node);
 	}
-#line 875 "quack.tab.cxx" // lalr1.cc:870
+#line 879 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 32:
-<<<<<<< HEAD
-#line 269 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 265 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 273 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Typecase);
 		(yylhs.value.node)->append((yystack_[3].value.node));
 		(yylhs.value.node)->append((yystack_[1].value.node));
 	}
-#line 885 "quack.tab.cxx" // lalr1.cc:870
+#line 889 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 33:
-<<<<<<< HEAD
-#line 276 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 272 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 280 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Type_alt);
 		(yylhs.value.node)->append((yystack_[3].value.node));
 		(yylhs.value.node)->append((yystack_[1].value.node));
 		(yylhs.value.node)->append((yystack_[0].value.node));
 	}
-<<<<<<< HEAD
-#line 896 "quack.tab.cxx" // lalr1.cc:870
+#line 900 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 34:
-#line 285 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 897 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 34:
-#line 280 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 289 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = (yystack_[0].value.node);
 		(yylhs.value.node)->sType_ = Loc;
 	}
-#line 905 "quack.tab.cxx" // lalr1.cc:870
+#line 909 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 35:
-<<<<<<< HEAD
-#line 289 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 284 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 293 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Dot);
 		(yylhs.value.node)->sType_ = L_expr;
@@ -1173,415 +917,239 @@ namespace yy {
 		(yystack_[0].value.node)->sType_ = R_expr;
 		(yylhs.value.node)->append((yystack_[0].value.node));
 	}
-#line 918 "quack.tab.cxx" // lalr1.cc:870
+#line 921 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 36:
-<<<<<<< HEAD
-#line 299 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 293 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 303 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     { 
 		(yylhs.value.node) = new AST::ASTNode(Strconst, (yystack_[0].value.str));
 	}
-#line 926 "quack.tab.cxx" // lalr1.cc:870
+#line 929 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 37:
-<<<<<<< HEAD
-#line 302 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 296 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 306 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Intconst, (yystack_[0].value.num));
 	}
-#line 934 "quack.tab.cxx" // lalr1.cc:870
+#line 937 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 38:
-<<<<<<< HEAD
-#line 305 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 299 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 309 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Load);
 		(yylhs.value.node)->append((yystack_[0].value.node));
 		(yylhs.value.node)->sType_ = L_expr;
 	}
-<<<<<<< HEAD
-#line 943 "quack.tab.cxx" // lalr1.cc:870
+#line 947 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 39:
-#line 310 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 944 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 39:
-#line 304 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 314 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     { 
 		(yylhs.value.node) = new AST::ASTNode(Call);
 		(yylhs.value.node)->sType_ = Plus;
 		(yylhs.value.node)->append((yystack_[2].value.node));
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(Plus);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "Plus");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		(yylhs.value.node)->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
 		a->append((yystack_[0].value.node));
 		(yylhs.value.node)->append(a);
 	 }
-<<<<<<< HEAD
-#line 959 "quack.tab.cxx" // lalr1.cc:870
+#line 963 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 40:
-#line 321 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 960 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 40:
-#line 315 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 325 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Call);
 		(yylhs.value.node)->sType_ = Minus;
 		(yylhs.value.node)->append((yystack_[2].value.node));
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(Minus);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "Minus");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		(yylhs.value.node)->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
 		a->append((yystack_[0].value.node));
 		(yylhs.value.node)->append(a);
 	}
-<<<<<<< HEAD
-#line 975 "quack.tab.cxx" // lalr1.cc:870
+#line 979 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 41:
-#line 332 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 976 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 41:
-#line 326 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 336 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Call);
 		(yylhs.value.node)->sType_ = Mult;
 		(yylhs.value.node)->append((yystack_[2].value.node));
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(Mult);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "Mult");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		(yylhs.value.node)->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
 		a->append((yystack_[0].value.node));
 		(yylhs.value.node)->append(a);
 	}
-<<<<<<< HEAD
-#line 991 "quack.tab.cxx" // lalr1.cc:870
+#line 995 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 42:
-#line 343 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 992 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 42:
-#line 337 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 347 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Call);
 		(yylhs.value.node)->sType_ = Div;
 		(yylhs.value.node)->append((yystack_[2].value.node));
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(Div);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "Div");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		(yylhs.value.node)->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
 		a->append((yystack_[0].value.node));
 		(yylhs.value.node)->append(a);
 	}
-<<<<<<< HEAD
-#line 1007 "quack.tab.cxx" // lalr1.cc:870
+#line 1011 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 43:
-#line 354 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 1008 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 43:
-#line 348 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 358 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Minus);
 		(yylhs.value.node)->append((yystack_[0].value.node));
 	}
-<<<<<<< HEAD
-#line 1016 "quack.tab.cxx" // lalr1.cc:870
+#line 1020 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 44:
-#line 358 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
+#line 362 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = (yystack_[1].value.node);
 	}
-#line 1024 "quack.tab.cxx" // lalr1.cc:870
+#line 1028 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 45:
-#line 364 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 1017 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 44:
-#line 352 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-    {
-		(yylhs.value.node) = (yystack_[1].value.node);
-	}
-#line 1025 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 45:
-#line 358 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 368 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Call);
 		(yylhs.value.node)->sType_ = Equals;
 		(yylhs.value.node)->append((yystack_[2].value.node));
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(Equals);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "Equals");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		(yylhs.value.node)->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
 		a->append((yystack_[0].value.node));
 		(yylhs.value.node)->append(a);
 	}
-<<<<<<< HEAD
-#line 1040 "quack.tab.cxx" // lalr1.cc:870
+#line 1044 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 46:
-#line 375 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 1041 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 46:
-#line 369 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 379 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Call);
 		(yylhs.value.node)->sType_ = AtMost;
 		(yylhs.value.node)->append((yystack_[2].value.node));
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(AtMost);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "AtMost");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		(yylhs.value.node)->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
 		a->append((yystack_[0].value.node));
 		(yylhs.value.node)->append(a);
 	}
-<<<<<<< HEAD
-#line 1056 "quack.tab.cxx" // lalr1.cc:870
+#line 1060 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 47:
-#line 386 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 1057 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 47:
-#line 380 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 390 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Call);
 		(yylhs.value.node)->sType_ = AtLeast;
 		(yylhs.value.node)->append((yystack_[2].value.node));
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(AtLeast);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "AtLeast");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		(yylhs.value.node)->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
 		a->append((yystack_[0].value.node));
 		(yylhs.value.node)->append(a);
 	}
-<<<<<<< HEAD
-#line 1072 "quack.tab.cxx" // lalr1.cc:870
+#line 1076 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 48:
-#line 397 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 1073 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 48:
-#line 391 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 401 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Call);
 		(yylhs.value.node)->sType_ = Less;
 		(yylhs.value.node)->append((yystack_[2].value.node));
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(Less);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "Less");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		(yylhs.value.node)->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
 		a->append((yystack_[0].value.node));
 		(yylhs.value.node)->append(a);
 	}
-<<<<<<< HEAD
-#line 1088 "quack.tab.cxx" // lalr1.cc:870
+#line 1092 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 49:
-#line 408 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 1089 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 49:
-#line 402 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 412 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Call);
 		(yylhs.value.node)->sType_ = Greater;
 		(yylhs.value.node)->append((yystack_[2].value.node));
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(Greater);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "Greater");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		(yylhs.value.node)->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
 		a->append((yystack_[0].value.node));
 		(yylhs.value.node)->append(a);
 	}
-<<<<<<< HEAD
-#line 1104 "quack.tab.cxx" // lalr1.cc:870
+#line 1108 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 50:
-#line 419 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 1105 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 50:
-#line 413 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 423 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Call);
 		(yylhs.value.node)->sType_ = And;
 		(yylhs.value.node)->append((yystack_[2].value.node));
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(And);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "And");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		(yylhs.value.node)->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
 		a->append((yystack_[0].value.node));
 		(yylhs.value.node)->append(a);
 	}
-<<<<<<< HEAD
-#line 1120 "quack.tab.cxx" // lalr1.cc:870
+#line 1124 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 51:
-#line 430 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 1121 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 51:
-#line 424 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 434 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     { 
 		(yylhs.value.node) = new AST::ASTNode(Call);
 		(yylhs.value.node)->sType_ = Or;
 		(yylhs.value.node)->append((yystack_[2].value.node));
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(Or);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "Or");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		(yylhs.value.node)->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
 		a->append((yystack_[0].value.node));
 		(yylhs.value.node)->append(a);
 	}
-<<<<<<< HEAD
-#line 1136 "quack.tab.cxx" // lalr1.cc:870
+#line 1140 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 52:
-#line 441 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 1137 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 52:
-#line 435 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 445 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Not);
 		(yylhs.value.node)->append((yystack_[0].value.node));
 	}
-<<<<<<< HEAD
-#line 1145 "quack.tab.cxx" // lalr1.cc:870
+#line 1149 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 53:
-#line 447 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 1146 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 53:
-#line 441 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 451 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Call);
 		(yylhs.value.node)->append((yystack_[5].value.node));
@@ -1589,100 +1157,54 @@ namespace yy {
 		(yylhs.value.node)->append((yystack_[3].value.node));
 		(yylhs.value.node)->append((yystack_[1].value.node));
 	}
-<<<<<<< HEAD
-#line 1157 "quack.tab.cxx" // lalr1.cc:870
+#line 1161 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 54:
-#line 455 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 1158 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 54:
-#line 449 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 459 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Constructor);
 		(yylhs.value.node)->append((yystack_[3].value.node));
 		(yylhs.value.node)->append((yystack_[1].value.node));
 	}
-<<<<<<< HEAD
-#line 1167 "quack.tab.cxx" // lalr1.cc:870
+#line 1171 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 55:
-#line 464 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
+#line 468 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     { (yylhs.value.node) = new AST::ASTNode(Actual_args); }
-#line 1173 "quack.tab.cxx" // lalr1.cc:870
+#line 1177 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 56:
-#line 466 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 1168 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 55:
-#line 457 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-    { (yylhs.value.node) = new AST::ASTNode(Actual_args); }
-#line 1174 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 56:
-#line 459 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 470 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Actual_args);
 		(yylhs.value.node)->append((yystack_[2].value.node));
 		(yylhs.value.node)->append((yystack_[0].value.node));
 	}
-<<<<<<< HEAD
-#line 1183 "quack.tab.cxx" // lalr1.cc:870
+#line 1187 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 57:
-#line 471 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-=======
-#line 1184 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 57:
-#line 464 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 475 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(MethodArg);
 		(yylhs.value.node)->append((yystack_[0].value.node));
 	}
-<<<<<<< HEAD
-#line 1192 "quack.tab.cxx" // lalr1.cc:870
+#line 1196 "quack.tab.cxx" // lalr1.cc:870
     break;
 
   case 58:
-#line 478 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
+#line 482 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:870
     {
 		(yylhs.value.node) = new AST::ASTNode(Ident, (yystack_[0].value.str));
 	}
-#line 1200 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-
 #line 1204 "quack.tab.cxx" // lalr1.cc:870
-=======
-#line 1193 "quack.tab.cxx" // lalr1.cc:870
-    break;
-
-  case 58:
-#line 470 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:870
-    {
-		(yylhs.value.node) = new AST::ASTNode(Ident, (yystack_[0].value.str));
-	}
-#line 1201 "quack.tab.cxx" // lalr1.cc:870
     break;
 
 
-#line 1205 "quack.tab.cxx" // lalr1.cc:870
->>>>>>> origin/master
+#line 1208 "quack.tab.cxx" // lalr1.cc:870
             default:
               break;
             }
@@ -1857,7 +1379,6 @@ namespace yy {
   const short
   parser::yypact_[] =
   {
-<<<<<<< HEAD
      -51,    10,    50,   -51,     0,   -51,     3,   -51,    42,   -51,
      -51,    76,    76,    76,    76,    76,    76,    76,   -51,   -51,
      -16,   129,    58,     0,   -51,   147,   201,   214,   214,    22,
@@ -1871,27 +1392,11 @@ namespace yy {
      -51,   -51,   -51,   214,   -51,   -51,   -51,     3,     3,   -51,
        2,     0,   -51,   -51,    71,     0,    80,    44,     0,   -51,
       75,   -51
-=======
-     -51,     4,    20,   -51,     7,    50,   -51,   -51,    13,   -51,
-     -51,    19,    19,    19,    19,    19,    19,    19,   -51,   -51,
-     -16,   114,    17,     7,   -51,   132,   196,   209,   209,   229,
-      12,   222,   -18,     7,    19,    19,    19,    19,    19,    19,
-      19,    19,    19,    19,    19,    19,     7,   -51,    19,     1,
-      23,   -51,    25,   -51,     7,   -51,   -51,   -51,   -51,    19,
-      24,   160,   229,   229,   229,   229,   229,   137,   137,    12,
-      12,     8,     8,    34,    -8,    55,     7,     7,    35,    33,
-       3,    36,   222,    19,   -51,    19,   -51,     7,    39,   -51,
-     -51,   -51,     7,   -51,    19,    40,   -51,   -51,   178,    -1,
-     -51,   -51,   -51,   209,   -51,   -51,   -51,    50,    50,   -51,
-       2,     7,   -51,   -51,    43,     7,    46,    14,     7,   -51,
-      40,   -51
->>>>>>> origin/master
   };
 
   const unsigned char
   parser::yydefact_[] =
   {
-<<<<<<< HEAD
        3,     0,    24,     1,     0,     4,     2,    58,     0,    36,
       37,     0,     0,     0,     0,     0,     0,    55,    25,    31,
       38,     0,    34,    12,    38,     0,     0,     0,     0,    52,
@@ -1905,54 +1410,27 @@ namespace yy {
        7,    24,    24,     0,    22,    27,    53,     8,    33,    20,
        0,     0,     5,     9,     0,    12,     0,     0,     0,    11,
        0,    10
-=======
-       3,     0,     5,     1,     0,     2,     4,    58,     0,    36,
-      37,     0,     0,     0,     0,     0,     0,    55,     6,    31,
-      38,     0,    34,    14,    38,     0,     0,     0,     0,    52,
-      43,    57,     0,     0,     0,     0,     0,     0,     0,     0,
-       0,     0,     0,     0,     0,     0,     0,    29,    55,     0,
-      15,    17,     0,    30,     0,     5,    20,    26,    44,     0,
-       0,     0,    50,    51,    45,    46,    47,    48,    49,    39,
-      40,    42,    41,    35,     0,     8,     0,     0,     0,     0,
-       0,    23,    56,     0,    28,    55,    54,     0,     0,    16,
-      18,    32,     0,    25,     0,     0,    21,    19,     0,     0,
-       9,     5,     5,     0,    24,    27,    53,    10,    33,    22,
-       0,     0,     7,    11,     0,    14,     0,     0,     0,    13,
-       0,    12
->>>>>>> origin/master
   };
 
   const signed char
   parser::yypgoto_[] =
   {
-<<<<<<< HEAD
      -51,   -51,   -51,   -51,   -51,   -51,   -51,     1,   -51,    34,
      -51,   -51,   -51,   -51,   -26,   -50,   -51,   -51,    -5,    23,
      -44,    -4
-=======
-     -51,   -51,   -51,   -50,   -51,   -51,   -51,   -51,   -36,   -51,
-       5,   -51,   -51,   -51,   -51,   -27,   -51,   -51,    -3,    83,
-     -45,    -4
->>>>>>> origin/master
   };
 
   const signed char
   parser::yydefgoto_[] =
   {
-<<<<<<< HEAD
       -1,     1,     2,     5,    88,   110,   113,    49,    50,    51,
       18,    81,    96,    97,    56,     6,    19,    78,    24,    21,
-=======
-      -1,     1,     2,     5,     6,    88,   110,   113,    49,    50,
-      51,    18,    81,    96,    97,    56,    19,    78,    24,    21,
->>>>>>> origin/master
       32,    22
   };
 
   const unsigned char
   parser::yytable_[] =
   {
-<<<<<<< HEAD
        8,    20,    57,     7,    74,    80,     7,     9,    10,   111,
        3,    58,    11,    12,    13,    59,    33,    14,    34,    52,
       15,    42,    43,    44,    45,    46,    86,    16,   106,    60,
@@ -1979,40 +1457,11 @@ namespace yy {
       36,    54,    37,    38,    39,    40,    41,    42,    43,    44,
       45,    46,    35,    36,    55,    37,    38,    39,    40,    41,
       42,    43,    44,    45,    46
-=======
-       8,    57,    20,    74,     3,    80,     7,     9,    10,   111,
-       7,    58,    11,    12,    13,    59,    33,    14,    34,    52,
-      15,    86,     7,     9,    10,    59,     4,    16,   106,    60,
-      75,    17,    59,   112,    93,    46,    15,    44,    45,    46,
-      99,    23,    73,    16,    55,    48,   118,    17,    94,    95,
-      79,   107,   108,     7,     9,    10,    76,    77,    83,    11,
-      12,    13,    85,    87,    14,    92,    91,    15,   104,   101,
-      55,   115,    52,    90,    16,   117,   109,    20,    17,   116,
-       0,    89,     0,   100,     0,     0,     0,     0,   102,     0,
-     119,     0,     0,   121,    25,    26,    27,    28,    29,    30,
-      31,     0,     0,     0,    20,    20,     0,   114,     0,     0,
-       0,    52,     0,     0,   120,     0,     0,    61,    62,    63,
-      64,    65,    66,    67,    68,    69,    70,    71,    72,    35,
-      36,    31,    37,    38,    39,    40,    41,    42,    43,    44,
-      45,    46,    82,     0,     0,     0,     0,    35,    36,    47,
-      37,    38,    39,    40,    41,    42,    43,    44,    45,    46,
-      42,    43,    44,    45,    46,     0,    98,    53,    31,     0,
-       0,     0,     0,     0,     0,    35,    36,   103,    37,    38,
-      39,    40,    41,    42,    43,    44,    45,    46,     0,     0,
-       0,     0,     0,    35,    36,    84,    37,    38,    39,    40,
-      41,    42,    43,    44,    45,    46,     0,     0,     0,     0,
-       0,    35,    36,   105,    37,    38,    39,    40,    41,    42,
-      43,    44,    45,    46,    35,    36,    54,    37,    38,    39,
-      40,    41,    42,    43,    44,    45,    46,    35,    36,    55,
-      37,    38,    39,    40,    41,    42,    43,    44,    45,    46,
-      40,    41,    42,    43,    44,    45,    46
->>>>>>> origin/master
   };
 
   const signed char
   parser::yycheck_[] =
   {
-<<<<<<< HEAD
        4,     6,    28,     3,    48,    55,     3,     4,     5,     7,
        0,    29,     9,    10,    11,    33,    32,    14,    34,    23,
       17,    23,    24,    25,    26,    27,    29,    24,    29,    33,
@@ -2039,40 +1488,11 @@ namespace yy {
       16,    30,    18,    19,    20,    21,    22,    23,    24,    25,
       26,    27,    15,    16,    30,    18,    19,    20,    21,    22,
       23,    24,    25,    26,    27
-=======
-       4,    28,     5,    48,     0,    55,     3,     4,     5,     7,
-       3,    29,     9,    10,    11,    33,    32,    14,    34,    23,
-      17,    29,     3,     4,     5,    33,     6,    24,    29,    33,
-      29,    28,    33,    31,    31,    27,    17,    25,    26,    27,
-      85,    28,    46,    24,    30,    28,    32,    28,    12,    13,
-      54,   101,   102,     3,     4,     5,    33,    32,    34,     9,
-      10,    11,    28,     8,    14,    32,    31,    17,    95,    30,
-      30,    28,    76,    77,    24,    29,   103,    80,    28,   115,
-      -1,    76,    -1,    87,    -1,    -1,    -1,    -1,    92,    -1,
-     117,    -1,    -1,   120,    11,    12,    13,    14,    15,    16,
-      17,    -1,    -1,    -1,   107,   108,    -1,   111,    -1,    -1,
-      -1,   115,    -1,    -1,   118,    -1,    -1,    34,    35,    36,
-      37,    38,    39,    40,    41,    42,    43,    44,    45,    15,
-      16,    48,    18,    19,    20,    21,    22,    23,    24,    25,
-      26,    27,    59,    -1,    -1,    -1,    -1,    15,    16,    35,
-      18,    19,    20,    21,    22,    23,    24,    25,    26,    27,
-      23,    24,    25,    26,    27,    -1,    83,    35,    85,    -1,
-      -1,    -1,    -1,    -1,    -1,    15,    16,    94,    18,    19,
-      20,    21,    22,    23,    24,    25,    26,    27,    -1,    -1,
-      -1,    -1,    -1,    15,    16,    35,    18,    19,    20,    21,
-      22,    23,    24,    25,    26,    27,    -1,    -1,    -1,    -1,
-      -1,    15,    16,    35,    18,    19,    20,    21,    22,    23,
-      24,    25,    26,    27,    15,    16,    30,    18,    19,    20,
-      21,    22,    23,    24,    25,    26,    27,    15,    16,    30,
-      18,    19,    20,    21,    22,    23,    24,    25,    26,    27,
-      21,    22,    23,    24,    25,    26,    27
->>>>>>> origin/master
   };
 
   const unsigned char
   parser::yystos_[] =
   {
-<<<<<<< HEAD
        0,    37,    38,     0,     6,    39,    51,     3,    57,     4,
        5,     9,    10,    11,    14,    17,    24,    28,    46,    52,
       54,    55,    57,    28,    54,    55,    55,    55,    55,    55,
@@ -2086,37 +1506,15 @@ namespace yy {
       57,    30,    57,    55,    50,    35,    29,    51,    51,    50,
       41,     7,    31,    42,    57,    28,    43,    29,    32,    50,
       57,    50
-=======
-       0,    37,    38,     0,     6,    39,    40,     3,    57,     4,
-       5,     9,    10,    11,    14,    17,    24,    28,    47,    52,
-      54,    55,    57,    28,    54,    55,    55,    55,    55,    55,
-      55,    55,    56,    32,    34,    15,    16,    18,    19,    20,
-      21,    22,    23,    24,    25,    26,    27,    35,    28,    44,
-      45,    46,    57,    35,    30,    30,    51,    51,    29,    33,
-      57,    55,    55,    55,    55,    55,    55,    55,    55,    55,
-      55,    55,    55,    57,    56,    29,    33,    32,    53,    57,
-      39,    48,    55,    34,    35,    28,    29,     8,    41,    46,
-      57,    31,    32,    31,    12,    13,    49,    50,    55,    56,
-      57,    30,    57,    55,    51,    35,    29,    39,    39,    51,
-      42,     7,    31,    43,    57,    28,    44,    29,    32,    51,
-      57,    51
->>>>>>> origin/master
   };
 
   const unsigned char
   parser::yyr1_[] =
   {
-<<<<<<< HEAD
        0,    36,    37,    38,    38,    39,    40,    40,    41,    41,
       42,    42,    43,    43,    44,    44,    45,    46,    47,    47,
       48,    49,    49,    50,    51,    51,    46,    46,    46,    46,
       46,    46,    52,    53,    54,    54,    55,    55,    55,    55,
-=======
-       0,    36,    37,    38,    38,    39,    39,    40,    41,    41,
-      42,    42,    43,    43,    44,    44,    45,    45,    46,    47,
-      48,    48,    49,    50,    50,    51,    47,    47,    47,    47,
-      47,    47,    52,    53,    54,    54,    55,    55,    55,    55,
->>>>>>> origin/master
       55,    55,    55,    55,    55,    55,    55,    55,    55,    55,
       55,    55,    55,    55,    55,    56,    56,    56,    57
   };
@@ -2124,15 +1522,9 @@ namespace yy {
   const unsigned char
   parser::yyr2_[] =
   {
-<<<<<<< HEAD
        0,     2,     2,     0,     2,    10,     0,     2,     0,     2,
        8,     6,     0,     1,     3,     1,     3,     5,     0,     2,
        3,     0,     2,     3,     0,     2,     3,     6,     4,     2,
-=======
-       0,     2,     2,     0,     2,     0,     2,    10,     0,     2,
-       0,     2,     8,     6,     0,     1,     3,     1,     3,     5,
-       0,     2,     3,     0,     2,     3,     3,     6,     4,     2,
->>>>>>> origin/master
        3,     1,     5,     4,     1,     3,     1,     1,     1,     3,
        3,     3,     3,     2,     3,     3,     3,     3,     3,     3,
        3,     3,     2,     6,     4,     0,     3,     1,     1
@@ -2149,15 +1541,9 @@ namespace yy {
   "DEF", "EXTENDS", "RETURN", "TYPECASE", "IF", "ELIF", "ELSE", "WHILE",
   "AND", "OR", "NOT", "EQUALS", "ATMOST", "ATLEAST", "'<'", "'>'", "'+'",
   "'-'", "'/'", "'*'", "'.'", "'('", "')'", "'{'", "'}'", "':'", "','",
-<<<<<<< HEAD
   "'='", "';'", "$accept", "program", "classes", "class", "extends",
   "methods", "method", "formal_arg_list", "formal_args", "formal_arg",
   "statement", "elifs", "elif", "else", "statement_block", "statements",
-=======
-  "'='", "';'", "$accept", "program", "classes", "statements", "class",
-  "extends", "methods", "method", "formal_arg_list", "formal_args",
-  "formal_arg", "statement", "elifs", "elif", "else", "statement_block",
->>>>>>> origin/master
   "typecase", "type_alt", "l_expr", "r_expr", "actual_args", "ident", YY_NULLPTR
   };
 
@@ -2165,21 +1551,12 @@ namespace yy {
   const unsigned short
   parser::yyrline_[] =
   {
-<<<<<<< HEAD
        0,    76,    76,    85,    86,    92,   114,   117,   124,   125,
      131,   142,   156,   157,   160,   164,   171,   181,   190,   193,
-     199,   207,   209,   216,   221,   225,   231,   238,   245,   251,
-     256,   263,   269,   276,   285,   289,   299,   302,   305,   310,
-     321,   332,   343,   354,   358,   364,   375,   386,   397,   408,
-     419,   430,   441,   447,   455,   464,   466,   471,   478
-=======
-       0,    75,    75,    84,    85,    91,    95,   101,   123,   126,
-     133,   134,   140,   151,   164,   165,   168,   172,   179,   188,
-     197,   200,   206,   214,   216,   223,   228,   235,   242,   248,
-     253,   260,   265,   272,   280,   284,   293,   296,   299,   304,
-     315,   326,   337,   348,   352,   358,   369,   380,   391,   402,
-     413,   424,   435,   441,   449,   457,   459,   464,   470
->>>>>>> origin/master
+     199,   207,   209,   219,   224,   228,   234,   241,   249,   255,
+     260,   267,   273,   280,   289,   293,   303,   306,   309,   314,
+     325,   336,   347,   358,   362,   368,   379,   390,   401,   412,
+     423,   434,   445,   451,   459,   468,   470,   475,   482
   };
 
   // Print the state stack on the debug stream.
@@ -2261,13 +1638,8 @@ namespace yy {
 
 
 } // yy
-<<<<<<< HEAD
-#line 1638 "quack.tab.cxx" // lalr1.cc:1181
-#line 482 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:1182
-=======
-#line 1639 "quack.tab.cxx" // lalr1.cc:1181
-#line 473 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:1182
->>>>>>> origin/master
+#line 1642 "quack.tab.cxx" // lalr1.cc:1181
+#line 486 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:1182
 
 #include "Messages.h"
 
@@ -2277,5 +1649,5 @@ void yy::parser::error(const location_type& loc, const std::string& msg)
 }
 
 void dump(AST::ASTNode* n) {
-    // std::cout << "*** Building: " << n->str() << std::endl;
+    
 }

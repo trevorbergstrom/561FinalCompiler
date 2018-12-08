@@ -6,21 +6,10 @@ CMakeFiles/lexer.dir/ASTNode.cpp.o: ASTNode.h
 CMakeFiles/lexer.dir/ASTNode.cpp.o: CodegenContext.h
 CMakeFiles/lexer.dir/ASTNode.cpp.o: EvalContext.h
 
-CMakeFiles/lexer.dir/CodeGenerator.cpp.o: ASTNode.h
-CMakeFiles/lexer.dir/CodeGenerator.cpp.o: CodeGenerator.cpp
-CMakeFiles/lexer.dir/CodeGenerator.cpp.o: CodeGenerator.h
-CMakeFiles/lexer.dir/CodeGenerator.cpp.o: CodegenContext.h
-CMakeFiles/lexer.dir/CodeGenerator.cpp.o: EvalContext.h
-CMakeFiles/lexer.dir/CodeGenerator.cpp.o: TypeCheck.h
-
 CMakeFiles/lexer.dir/Messages.cpp.o: Messages.cpp
 CMakeFiles/lexer.dir/Messages.cpp.o: Messages.h
-
-CMakeFiles/lexer.dir/TypeCheck.cpp.o: ASTNode.h
-CMakeFiles/lexer.dir/TypeCheck.cpp.o: CodegenContext.h
-CMakeFiles/lexer.dir/TypeCheck.cpp.o: EvalContext.h
-CMakeFiles/lexer.dir/TypeCheck.cpp.o: TypeCheck.cpp
-CMakeFiles/lexer.dir/TypeCheck.cpp.o: TypeCheck.h
+CMakeFiles/lexer.dir/Messages.cpp.o: location.hh
+CMakeFiles/lexer.dir/Messages.cpp.o: position.hh
 
 CMakeFiles/lexer.dir/lex.yy.cpp.o: ASTNode.h
 CMakeFiles/lexer.dir/lex.yy.cpp.o: CodegenContext.h

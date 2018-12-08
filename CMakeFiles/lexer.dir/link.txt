@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-/Library/Developer/CommandLineTools/usr/bin/c++   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/lexer.dir/lex_driver.cpp.o CMakeFiles/lexer.dir/lex.yy.cpp.o CMakeFiles/lexer.dir/ASTNode.cpp.o CMakeFiles/lexer.dir/Messages.cpp.o CMakeFiles/lexer.dir/TypeCheck.cpp.o CMakeFiles/lexer.dir/CodeGenerator.cpp.o  -o lexer /usr/local/lib/libreflex.a 
-=======
-/Library/Developer/CommandLineTools/usr/bin/c++   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/lexer.dir/lex_driver.cpp.o CMakeFiles/lexer.dir/lex.yy.cpp.o CMakeFiles/lexer.dir/ASTNode.cpp.o CMakeFiles/lexer.dir/Messages.cpp.o CMakeFiles/lexer.dir/TypeCheck.cpp.o  -o lexer /usr/local/lib/libreflex.a 
->>>>>>> origin/master
+/Library/Developer/CommandLineTools/usr/bin/c++   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/lexer.dir/lex_driver.cpp.o CMakeFiles/lexer.dir/lex.yy.cpp.o CMakeFiles/lexer.dir/ASTNode.cpp.o CMakeFiles/lexer.dir/Messages.cpp.o  -o lexer /usr/local/lib/libreflex.a 

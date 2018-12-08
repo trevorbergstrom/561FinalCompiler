@@ -34,7 +34,7 @@ include_directories(
 
 add_executable(parser
         quack.tab.cxx lex.yy.cpp lex.yy.h
-        parser.cpp ASTNode.cpp ASTNode.h Messages.h Messages.cpp TypeCheck.cpp TypeCheck.h CodeGenerator.h CodeGenerator.cpp Builtins.h Builtins.c)
+        parser.cpp ASTNode.cpp ASTNode.h Messages.h Messages.cpp TypeCheck.h TypeCheck.cpp CodeGenerator.h CodeGenerator.cpp Builtins.h Builtins.cpp)
 
 add_executable(lexer
         lex_driver.cpp

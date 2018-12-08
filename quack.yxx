@@ -207,14 +207,11 @@ else:
 	%empty { $$ = new AST::ASTNode(Block);
 	}
 	| ELSE statement_block {
-<<<<<<< HEAD
 		$2->sType_ = FalseState;
 		$$ = $2; 
-=======
 		$$ = new AST::ASTNode(Block);
 		$2->sType_ = FalseState;
 		$$->append($2); 
->>>>>>> origin/master
 	};
 
 /*---------------------------------------------------------------------------------*/
@@ -244,11 +241,8 @@ statement:
 	l_expr ':' ident '=' r_expr ';' {
 		$$ = new AST::ASTNode(Assign);
 		$$->append($1);
-<<<<<<< HEAD
 		$1->append($3);
-=======
 		$$->append($3);
->>>>>>> origin/master
 		$5->sType_ = R_expr;
 		$$->append($5);
 	}
@@ -321,11 +315,7 @@ r_expr:
 		$$ = new AST::ASTNode(Call);
 		$$->sType_ = Plus;
 		$$->append($1);
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(Plus);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "Plus");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		$$->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
@@ -336,11 +326,7 @@ r_expr:
 		$$ = new AST::ASTNode(Call);
 		$$->sType_ = Minus;
 		$$->append($1);
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(Minus);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "Minus");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		$$->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
@@ -351,11 +337,7 @@ r_expr:
 		$$ = new AST::ASTNode(Call);
 		$$->sType_ = Mult;
 		$$->append($1);
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(Mult);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "Mult");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		$$->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
@@ -366,11 +348,7 @@ r_expr:
 		$$ = new AST::ASTNode(Call);
 		$$->sType_ = Div;
 		$$->append($1);
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(Div);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "Div");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		$$->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
@@ -391,11 +369,7 @@ r_expr:
 		$$ = new AST::ASTNode(Call);
 		$$->sType_ = Equals;
 		$$->append($1);
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(Equals);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "Equals");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		$$->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
@@ -406,11 +380,7 @@ r_expr:
 		$$ = new AST::ASTNode(Call);
 		$$->sType_ = AtMost;
 		$$->append($1);
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(AtMost);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "AtMost");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		$$->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
@@ -421,11 +391,7 @@ r_expr:
 		$$ = new AST::ASTNode(Call);
 		$$->sType_ = AtLeast;
 		$$->append($1);
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(AtLeast);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "AtLeast");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		$$->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
@@ -436,11 +402,7 @@ r_expr:
 		$$ = new AST::ASTNode(Call);
 		$$->sType_ = Less;
 		$$->append($1);
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(Less);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "Less");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		$$->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
@@ -451,11 +413,7 @@ r_expr:
 		$$ = new AST::ASTNode(Call);
 		$$->sType_ = Greater;
 		$$->append($1);
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(Greater);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "Greater");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		$$->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
@@ -466,11 +424,7 @@ r_expr:
 		$$ = new AST::ASTNode(Call);
 		$$->sType_ = And;
 		$$->append($1);
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(And);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "And");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		$$->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);
@@ -481,11 +435,7 @@ r_expr:
 		$$ = new AST::ASTNode(Call);
 		$$->sType_ = Or;
 		$$->append($1);
-<<<<<<< HEAD
-		AST::ASTNode* nm = new AST::ASTNode(Or);
-=======
 		AST::ASTNode* nm = new AST::ASTNode(Ident, "Or");
->>>>>>> origin/master
 		nm->sType_ = Method;
 		$$->append(nm);
 		AST::ASTNode *a = new AST::ASTNode(Actual_args);

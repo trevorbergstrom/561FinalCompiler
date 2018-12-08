@@ -26,9 +26,6 @@ static const char* nodeTypeNames[] {
 };
 
 namespace AST {
-
-<<<<<<< HEAD
-=======
 /*
 	class AST_print_context {
 	public:
@@ -38,7 +35,6 @@ namespace AST {
 		void dedent() { --indent_; }
 	};
 */
->>>>>>> origin/master
 	class ASTNode {
 	public:
 		nodeType type_ = Holder;
@@ -68,11 +64,8 @@ namespace AST {
 
 		char* getClassName();
 		char* getMethodName();
-<<<<<<< HEAD
 		char* getTypeIdent();
 		ASTNode* getLeftMost();
-=======
->>>>>>> origin/master
 	};
 }
 

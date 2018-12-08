@@ -40,7 +40,7 @@
 #ifndef YY_YY_QUACK_TAB_HXX_INCLUDED
 # define YY_YY_QUACK_TAB_HXX_INCLUDED
 // //                    "%code requires" blocks.
-#line 6 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:395
+#line 6 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:395
 
 	namespace yy{
 		class Lexer;
@@ -140,7 +140,7 @@ namespace yy {
     /// Symbol semantic values.
     union semantic_type
     {
-    #line 26 "/Users/trevorbergstrom/NewCompiler/quack.yxx" // lalr1.cc:395
+    #line 26 "/Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx" // lalr1.cc:395
 
 	int 	num;
 	char* 	str;
@@ -490,11 +490,7 @@ namespace yy {
     enum
     {
       yyeof_ = 0,
-<<<<<<< HEAD
       yylast_ = 254,     ///< Last index in yytable_.
-=======
-      yylast_ = 256,     ///< Last index in yytable_.
->>>>>>> origin/master
       yynnts_ = 22,  ///< Number of nonterminal symbols.
       yyfinal_ = 3, ///< Termination state number.
       yyterror_ = 1,

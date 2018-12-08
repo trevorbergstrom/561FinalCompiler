@@ -10,11 +10,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/lexer.dir/lex.yy.cpp.o"
   "CMakeFiles/lexer.dir/ASTNode.cpp.o"
   "CMakeFiles/lexer.dir/Messages.cpp.o"
-  "CMakeFiles/lexer.dir/TypeCheck.cpp.o"
-<<<<<<< HEAD
-  "CMakeFiles/lexer.dir/CodeGenerator.cpp.o"
-=======
->>>>>>> origin/master
   "lexer.pdb"
   "lexer"
 )

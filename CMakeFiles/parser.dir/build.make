@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.12.3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/trevorbergstrom/NewCompiler
+CMAKE_SOURCE_DIR = /Users/trevorbergstrom/desktop/561FinalCompiler
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/trevorbergstrom/NewCompiler
+CMAKE_BINARY_DIR = /Users/trevorbergstrom/desktop/561FinalCompiler
 
 # Include any dependencies generated for this target.
 include CMakeFiles/parser.dir/depend.make
@@ -58,8 +58,8 @@ include CMakeFiles/parser.dir/progress.make
 include CMakeFiles/parser.dir/flags.make
 
 quack.tab.cxx: quack.yxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating quack.tab.cxx, quack.tab.hxx, location.hh, position.hh, stack.hh"
-	bison -d /Users/trevorbergstrom/NewCompiler/quack.yxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating quack.tab.cxx, quack.tab.hxx, location.hh, position.hh, stack.hh"
+	bison -d /Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx
 
 quack.tab.hxx: quack.tab.cxx
 	@$(CMAKE_COMMAND) -E touch_nocreate quack.tab.hxx
@@ -75,106 +75,116 @@ stack.hh: quack.tab.cxx
 
 lex.yy.cpp: quack.lxx
 lex.yy.cpp: quack.tab.hxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating lex.yy.cpp, lex.yy.h"
-	reflex --bison-cc --bison-locations --header-file /Users/trevorbergstrom/NewCompiler/quack.lxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating lex.yy.cpp, lex.yy.h"
+	reflex --bison-cc --bison-locations --header-file /Users/trevorbergstrom/desktop/561FinalCompiler/quack.lxx
 
 lex.yy.h: lex.yy.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate lex.yy.h
 
 CMakeFiles/parser.dir/quack.tab.cxx.o: CMakeFiles/parser.dir/flags.make
 CMakeFiles/parser.dir/quack.tab.cxx.o: quack.tab.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/parser.dir/quack.tab.cxx.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/parser.dir/quack.tab.cxx.o -c /Users/trevorbergstrom/NewCompiler/quack.tab.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/parser.dir/quack.tab.cxx.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/parser.dir/quack.tab.cxx.o -c /Users/trevorbergstrom/desktop/561FinalCompiler/quack.tab.cxx
 
 CMakeFiles/parser.dir/quack.tab.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/parser.dir/quack.tab.cxx.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/NewCompiler/quack.tab.cxx > CMakeFiles/parser.dir/quack.tab.cxx.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/desktop/561FinalCompiler/quack.tab.cxx > CMakeFiles/parser.dir/quack.tab.cxx.i
 
 CMakeFiles/parser.dir/quack.tab.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/parser.dir/quack.tab.cxx.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/NewCompiler/quack.tab.cxx -o CMakeFiles/parser.dir/quack.tab.cxx.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/desktop/561FinalCompiler/quack.tab.cxx -o CMakeFiles/parser.dir/quack.tab.cxx.s
 
 CMakeFiles/parser.dir/lex.yy.cpp.o: CMakeFiles/parser.dir/flags.make
 CMakeFiles/parser.dir/lex.yy.cpp.o: lex.yy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/parser.dir/lex.yy.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/parser.dir/lex.yy.cpp.o -c /Users/trevorbergstrom/NewCompiler/lex.yy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/parser.dir/lex.yy.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/parser.dir/lex.yy.cpp.o -c /Users/trevorbergstrom/desktop/561FinalCompiler/lex.yy.cpp
 
 CMakeFiles/parser.dir/lex.yy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/parser.dir/lex.yy.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/NewCompiler/lex.yy.cpp > CMakeFiles/parser.dir/lex.yy.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/desktop/561FinalCompiler/lex.yy.cpp > CMakeFiles/parser.dir/lex.yy.cpp.i
 
 CMakeFiles/parser.dir/lex.yy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/parser.dir/lex.yy.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/NewCompiler/lex.yy.cpp -o CMakeFiles/parser.dir/lex.yy.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/desktop/561FinalCompiler/lex.yy.cpp -o CMakeFiles/parser.dir/lex.yy.cpp.s
 
 CMakeFiles/parser.dir/parser.cpp.o: CMakeFiles/parser.dir/flags.make
 CMakeFiles/parser.dir/parser.cpp.o: parser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/parser.dir/parser.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/parser.dir/parser.cpp.o -c /Users/trevorbergstrom/NewCompiler/parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/parser.dir/parser.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/parser.dir/parser.cpp.o -c /Users/trevorbergstrom/desktop/561FinalCompiler/parser.cpp
 
 CMakeFiles/parser.dir/parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/parser.dir/parser.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/NewCompiler/parser.cpp > CMakeFiles/parser.dir/parser.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/desktop/561FinalCompiler/parser.cpp > CMakeFiles/parser.dir/parser.cpp.i
 
 CMakeFiles/parser.dir/parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/parser.dir/parser.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/NewCompiler/parser.cpp -o CMakeFiles/parser.dir/parser.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/desktop/561FinalCompiler/parser.cpp -o CMakeFiles/parser.dir/parser.cpp.s
 
 CMakeFiles/parser.dir/ASTNode.cpp.o: CMakeFiles/parser.dir/flags.make
 CMakeFiles/parser.dir/ASTNode.cpp.o: ASTNode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/parser.dir/ASTNode.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/parser.dir/ASTNode.cpp.o -c /Users/trevorbergstrom/NewCompiler/ASTNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/parser.dir/ASTNode.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/parser.dir/ASTNode.cpp.o -c /Users/trevorbergstrom/desktop/561FinalCompiler/ASTNode.cpp
 
 CMakeFiles/parser.dir/ASTNode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/parser.dir/ASTNode.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/NewCompiler/ASTNode.cpp > CMakeFiles/parser.dir/ASTNode.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/desktop/561FinalCompiler/ASTNode.cpp > CMakeFiles/parser.dir/ASTNode.cpp.i
 
 CMakeFiles/parser.dir/ASTNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/parser.dir/ASTNode.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/NewCompiler/ASTNode.cpp -o CMakeFiles/parser.dir/ASTNode.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/desktop/561FinalCompiler/ASTNode.cpp -o CMakeFiles/parser.dir/ASTNode.cpp.s
 
 CMakeFiles/parser.dir/Messages.cpp.o: CMakeFiles/parser.dir/flags.make
 CMakeFiles/parser.dir/Messages.cpp.o: Messages.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/parser.dir/Messages.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/parser.dir/Messages.cpp.o -c /Users/trevorbergstrom/NewCompiler/Messages.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/parser.dir/Messages.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/parser.dir/Messages.cpp.o -c /Users/trevorbergstrom/desktop/561FinalCompiler/Messages.cpp
 
 CMakeFiles/parser.dir/Messages.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/parser.dir/Messages.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/NewCompiler/Messages.cpp > CMakeFiles/parser.dir/Messages.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/desktop/561FinalCompiler/Messages.cpp > CMakeFiles/parser.dir/Messages.cpp.i
 
 CMakeFiles/parser.dir/Messages.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/parser.dir/Messages.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/NewCompiler/Messages.cpp -o CMakeFiles/parser.dir/Messages.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/desktop/561FinalCompiler/Messages.cpp -o CMakeFiles/parser.dir/Messages.cpp.s
 
 CMakeFiles/parser.dir/TypeCheck.cpp.o: CMakeFiles/parser.dir/flags.make
 CMakeFiles/parser.dir/TypeCheck.cpp.o: TypeCheck.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/parser.dir/TypeCheck.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/parser.dir/TypeCheck.cpp.o -c /Users/trevorbergstrom/NewCompiler/TypeCheck.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/parser.dir/TypeCheck.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/parser.dir/TypeCheck.cpp.o -c /Users/trevorbergstrom/desktop/561FinalCompiler/TypeCheck.cpp
 
 CMakeFiles/parser.dir/TypeCheck.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/parser.dir/TypeCheck.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/NewCompiler/TypeCheck.cpp > CMakeFiles/parser.dir/TypeCheck.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/desktop/561FinalCompiler/TypeCheck.cpp > CMakeFiles/parser.dir/TypeCheck.cpp.i
 
 CMakeFiles/parser.dir/TypeCheck.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/parser.dir/TypeCheck.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/NewCompiler/TypeCheck.cpp -o CMakeFiles/parser.dir/TypeCheck.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/desktop/561FinalCompiler/TypeCheck.cpp -o CMakeFiles/parser.dir/TypeCheck.cpp.s
 
-<<<<<<< HEAD
 CMakeFiles/parser.dir/CodeGenerator.cpp.o: CMakeFiles/parser.dir/flags.make
 CMakeFiles/parser.dir/CodeGenerator.cpp.o: CodeGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/parser.dir/CodeGenerator.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/parser.dir/CodeGenerator.cpp.o -c /Users/trevorbergstrom/NewCompiler/CodeGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/parser.dir/CodeGenerator.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/parser.dir/CodeGenerator.cpp.o -c /Users/trevorbergstrom/desktop/561FinalCompiler/CodeGenerator.cpp
 
 CMakeFiles/parser.dir/CodeGenerator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/parser.dir/CodeGenerator.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/NewCompiler/CodeGenerator.cpp > CMakeFiles/parser.dir/CodeGenerator.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/desktop/561FinalCompiler/CodeGenerator.cpp > CMakeFiles/parser.dir/CodeGenerator.cpp.i
 
 CMakeFiles/parser.dir/CodeGenerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/parser.dir/CodeGenerator.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/NewCompiler/CodeGenerator.cpp -o CMakeFiles/parser.dir/CodeGenerator.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/desktop/561FinalCompiler/CodeGenerator.cpp -o CMakeFiles/parser.dir/CodeGenerator.cpp.s
 
-=======
->>>>>>> origin/master
+CMakeFiles/parser.dir/Builtins.c.o: CMakeFiles/parser.dir/flags.make
+CMakeFiles/parser.dir/Builtins.c.o: Builtins.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/parser.dir/Builtins.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parser.dir/Builtins.c.o   -c /Users/trevorbergstrom/desktop/561FinalCompiler/Builtins.c
+
+CMakeFiles/parser.dir/Builtins.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/parser.dir/Builtins.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/trevorbergstrom/desktop/561FinalCompiler/Builtins.c > CMakeFiles/parser.dir/Builtins.c.i
+
+CMakeFiles/parser.dir/Builtins.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parser.dir/Builtins.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/trevorbergstrom/desktop/561FinalCompiler/Builtins.c -o CMakeFiles/parser.dir/Builtins.c.s
+
 # Object files for target parser
 parser_OBJECTS = \
 "CMakeFiles/parser.dir/quack.tab.cxx.o" \
@@ -182,12 +192,9 @@ parser_OBJECTS = \
 "CMakeFiles/parser.dir/parser.cpp.o" \
 "CMakeFiles/parser.dir/ASTNode.cpp.o" \
 "CMakeFiles/parser.dir/Messages.cpp.o" \
-<<<<<<< HEAD
 "CMakeFiles/parser.dir/TypeCheck.cpp.o" \
-"CMakeFiles/parser.dir/CodeGenerator.cpp.o"
-=======
-"CMakeFiles/parser.dir/TypeCheck.cpp.o"
->>>>>>> origin/master
+"CMakeFiles/parser.dir/CodeGenerator.cpp.o" \
+"CMakeFiles/parser.dir/Builtins.c.o"
 
 # External object files for target parser
 parser_EXTERNAL_OBJECTS =
@@ -198,18 +205,12 @@ parser: CMakeFiles/parser.dir/parser.cpp.o
 parser: CMakeFiles/parser.dir/ASTNode.cpp.o
 parser: CMakeFiles/parser.dir/Messages.cpp.o
 parser: CMakeFiles/parser.dir/TypeCheck.cpp.o
-<<<<<<< HEAD
 parser: CMakeFiles/parser.dir/CodeGenerator.cpp.o
+parser: CMakeFiles/parser.dir/Builtins.c.o
 parser: CMakeFiles/parser.dir/build.make
 parser: /usr/local/lib/libreflex.a
 parser: CMakeFiles/parser.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable parser"
-=======
-parser: CMakeFiles/parser.dir/build.make
-parser: /usr/local/lib/libreflex.a
-parser: CMakeFiles/parser.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable parser"
->>>>>>> origin/master
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable parser"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/parser.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -228,6 +229,6 @@ CMakeFiles/parser.dir/depend: position.hh
 CMakeFiles/parser.dir/depend: stack.hh
 CMakeFiles/parser.dir/depend: lex.yy.cpp
 CMakeFiles/parser.dir/depend: lex.yy.h
-	cd /Users/trevorbergstrom/NewCompiler && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/trevorbergstrom/NewCompiler /Users/trevorbergstrom/NewCompiler /Users/trevorbergstrom/NewCompiler /Users/trevorbergstrom/NewCompiler /Users/trevorbergstrom/NewCompiler/CMakeFiles/parser.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/trevorbergstrom/desktop/561FinalCompiler && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/trevorbergstrom/desktop/561FinalCompiler /Users/trevorbergstrom/desktop/561FinalCompiler /Users/trevorbergstrom/desktop/561FinalCompiler /Users/trevorbergstrom/desktop/561FinalCompiler /Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles/parser.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/parser.dir/depend
 

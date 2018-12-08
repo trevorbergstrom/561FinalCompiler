@@ -34,7 +34,11 @@ include_directories(
 
 add_executable(parser
         quack.tab.cxx lex.yy.cpp lex.yy.h
-        parser.cpp ASTNode.cpp ASTNode.h Messages.h Messages.cpp TypeCheck.cpp TypeCheck.h CodeGenerator.h CodeGenerator.cpp Builtins.h Builtins.c)
+<<<<<<< HEAD
+        parser.cpp ASTNode.cpp ASTNode.h Messages.h Messages.cpp TypeCheck.cpp TypeCheck.h CodeGenerator.h CodeGenerator.cpp)
+
+        parser.cpp ASTNode.cpp ASTNode.h Messages.h Messages.cpp TypeCheck.cpp TypeCheck.h CodeGenerator.h CodeGenerator.cpp)
+>>>>>>> origin/master
 
 add_executable(lexer
         lex_driver.cpp
@@ -42,6 +46,11 @@ add_executable(lexer
         location.hh position.hh
         quack.tab.hxx
         ASTNode.cpp ASTNode.h Messages.h Messages.cpp
+	TypeCheck.cpp TypeCheck.h
+<<<<<<< HEAD
+        CodeGenerator.h CodeGenerator.cpp
+
+>>>>>>> origin/master
         names.h)
 
 

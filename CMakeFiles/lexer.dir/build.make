@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.12.3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/trevorbergstrom/NewCompiler
+CMAKE_SOURCE_DIR = /Users/trevorbergstrom/desktop/561FinalCompiler
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/trevorbergstrom/NewCompiler
+CMAKE_BINARY_DIR = /Users/trevorbergstrom/desktop/561FinalCompiler
 
 # Include any dependencies generated for this target.
 include CMakeFiles/lexer.dir/depend.make
@@ -59,15 +59,15 @@ include CMakeFiles/lexer.dir/flags.make
 
 lex.yy.cpp: quack.lxx
 lex.yy.cpp: quack.tab.hxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating lex.yy.cpp, lex.yy.h"
-	reflex --bison-cc --bison-locations --header-file /Users/trevorbergstrom/NewCompiler/quack.lxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating lex.yy.cpp, lex.yy.h"
+	reflex --bison-cc --bison-locations --header-file /Users/trevorbergstrom/desktop/561FinalCompiler/quack.lxx
 
 lex.yy.h: lex.yy.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate lex.yy.h
 
 quack.tab.cxx: quack.yxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating quack.tab.cxx, quack.tab.hxx, location.hh, position.hh, stack.hh"
-	bison -d /Users/trevorbergstrom/NewCompiler/quack.yxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating quack.tab.cxx, quack.tab.hxx, location.hh, position.hh, stack.hh"
+	bison -d /Users/trevorbergstrom/desktop/561FinalCompiler/quack.yxx
 
 quack.tab.hxx: quack.tab.cxx
 	@$(CMAKE_COMMAND) -E touch_nocreate quack.tab.hxx
@@ -83,97 +83,62 @@ stack.hh: quack.tab.cxx
 
 CMakeFiles/lexer.dir/lex_driver.cpp.o: CMakeFiles/lexer.dir/flags.make
 CMakeFiles/lexer.dir/lex_driver.cpp.o: lex_driver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lexer.dir/lex_driver.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lexer.dir/lex_driver.cpp.o -c /Users/trevorbergstrom/NewCompiler/lex_driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lexer.dir/lex_driver.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lexer.dir/lex_driver.cpp.o -c /Users/trevorbergstrom/desktop/561FinalCompiler/lex_driver.cpp
 
 CMakeFiles/lexer.dir/lex_driver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lexer.dir/lex_driver.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/NewCompiler/lex_driver.cpp > CMakeFiles/lexer.dir/lex_driver.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/desktop/561FinalCompiler/lex_driver.cpp > CMakeFiles/lexer.dir/lex_driver.cpp.i
 
 CMakeFiles/lexer.dir/lex_driver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lexer.dir/lex_driver.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/NewCompiler/lex_driver.cpp -o CMakeFiles/lexer.dir/lex_driver.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/desktop/561FinalCompiler/lex_driver.cpp -o CMakeFiles/lexer.dir/lex_driver.cpp.s
 
 CMakeFiles/lexer.dir/lex.yy.cpp.o: CMakeFiles/lexer.dir/flags.make
 CMakeFiles/lexer.dir/lex.yy.cpp.o: lex.yy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/lexer.dir/lex.yy.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lexer.dir/lex.yy.cpp.o -c /Users/trevorbergstrom/NewCompiler/lex.yy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/lexer.dir/lex.yy.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lexer.dir/lex.yy.cpp.o -c /Users/trevorbergstrom/desktop/561FinalCompiler/lex.yy.cpp
 
 CMakeFiles/lexer.dir/lex.yy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lexer.dir/lex.yy.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/NewCompiler/lex.yy.cpp > CMakeFiles/lexer.dir/lex.yy.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/desktop/561FinalCompiler/lex.yy.cpp > CMakeFiles/lexer.dir/lex.yy.cpp.i
 
 CMakeFiles/lexer.dir/lex.yy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lexer.dir/lex.yy.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/NewCompiler/lex.yy.cpp -o CMakeFiles/lexer.dir/lex.yy.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/desktop/561FinalCompiler/lex.yy.cpp -o CMakeFiles/lexer.dir/lex.yy.cpp.s
 
 CMakeFiles/lexer.dir/ASTNode.cpp.o: CMakeFiles/lexer.dir/flags.make
 CMakeFiles/lexer.dir/ASTNode.cpp.o: ASTNode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/lexer.dir/ASTNode.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lexer.dir/ASTNode.cpp.o -c /Users/trevorbergstrom/NewCompiler/ASTNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/lexer.dir/ASTNode.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lexer.dir/ASTNode.cpp.o -c /Users/trevorbergstrom/desktop/561FinalCompiler/ASTNode.cpp
 
 CMakeFiles/lexer.dir/ASTNode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lexer.dir/ASTNode.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/NewCompiler/ASTNode.cpp > CMakeFiles/lexer.dir/ASTNode.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/desktop/561FinalCompiler/ASTNode.cpp > CMakeFiles/lexer.dir/ASTNode.cpp.i
 
 CMakeFiles/lexer.dir/ASTNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lexer.dir/ASTNode.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/NewCompiler/ASTNode.cpp -o CMakeFiles/lexer.dir/ASTNode.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/desktop/561FinalCompiler/ASTNode.cpp -o CMakeFiles/lexer.dir/ASTNode.cpp.s
 
 CMakeFiles/lexer.dir/Messages.cpp.o: CMakeFiles/lexer.dir/flags.make
 CMakeFiles/lexer.dir/Messages.cpp.o: Messages.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/lexer.dir/Messages.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lexer.dir/Messages.cpp.o -c /Users/trevorbergstrom/NewCompiler/Messages.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/lexer.dir/Messages.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lexer.dir/Messages.cpp.o -c /Users/trevorbergstrom/desktop/561FinalCompiler/Messages.cpp
 
 CMakeFiles/lexer.dir/Messages.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lexer.dir/Messages.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/NewCompiler/Messages.cpp > CMakeFiles/lexer.dir/Messages.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/desktop/561FinalCompiler/Messages.cpp > CMakeFiles/lexer.dir/Messages.cpp.i
 
 CMakeFiles/lexer.dir/Messages.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lexer.dir/Messages.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/NewCompiler/Messages.cpp -o CMakeFiles/lexer.dir/Messages.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/desktop/561FinalCompiler/Messages.cpp -o CMakeFiles/lexer.dir/Messages.cpp.s
 
-CMakeFiles/lexer.dir/TypeCheck.cpp.o: CMakeFiles/lexer.dir/flags.make
-CMakeFiles/lexer.dir/TypeCheck.cpp.o: TypeCheck.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/lexer.dir/TypeCheck.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lexer.dir/TypeCheck.cpp.o -c /Users/trevorbergstrom/NewCompiler/TypeCheck.cpp
-
-CMakeFiles/lexer.dir/TypeCheck.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lexer.dir/TypeCheck.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/NewCompiler/TypeCheck.cpp > CMakeFiles/lexer.dir/TypeCheck.cpp.i
-
-CMakeFiles/lexer.dir/TypeCheck.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lexer.dir/TypeCheck.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/NewCompiler/TypeCheck.cpp -o CMakeFiles/lexer.dir/TypeCheck.cpp.s
-
-<<<<<<< HEAD
-CMakeFiles/lexer.dir/CodeGenerator.cpp.o: CMakeFiles/lexer.dir/flags.make
-CMakeFiles/lexer.dir/CodeGenerator.cpp.o: CodeGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/lexer.dir/CodeGenerator.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lexer.dir/CodeGenerator.cpp.o -c /Users/trevorbergstrom/NewCompiler/CodeGenerator.cpp
-
-CMakeFiles/lexer.dir/CodeGenerator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lexer.dir/CodeGenerator.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/trevorbergstrom/NewCompiler/CodeGenerator.cpp > CMakeFiles/lexer.dir/CodeGenerator.cpp.i
-
-CMakeFiles/lexer.dir/CodeGenerator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lexer.dir/CodeGenerator.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/trevorbergstrom/NewCompiler/CodeGenerator.cpp -o CMakeFiles/lexer.dir/CodeGenerator.cpp.s
-
-=======
->>>>>>> origin/master
 # Object files for target lexer
 lexer_OBJECTS = \
 "CMakeFiles/lexer.dir/lex_driver.cpp.o" \
 "CMakeFiles/lexer.dir/lex.yy.cpp.o" \
 "CMakeFiles/lexer.dir/ASTNode.cpp.o" \
-"CMakeFiles/lexer.dir/Messages.cpp.o" \
-<<<<<<< HEAD
-"CMakeFiles/lexer.dir/TypeCheck.cpp.o" \
-"CMakeFiles/lexer.dir/CodeGenerator.cpp.o"
-=======
-"CMakeFiles/lexer.dir/TypeCheck.cpp.o"
->>>>>>> origin/master
+"CMakeFiles/lexer.dir/Messages.cpp.o"
 
 # External object files for target lexer
 lexer_EXTERNAL_OBJECTS =
@@ -182,19 +147,10 @@ lexer: CMakeFiles/lexer.dir/lex_driver.cpp.o
 lexer: CMakeFiles/lexer.dir/lex.yy.cpp.o
 lexer: CMakeFiles/lexer.dir/ASTNode.cpp.o
 lexer: CMakeFiles/lexer.dir/Messages.cpp.o
-lexer: CMakeFiles/lexer.dir/TypeCheck.cpp.o
-<<<<<<< HEAD
-lexer: CMakeFiles/lexer.dir/CodeGenerator.cpp.o
 lexer: CMakeFiles/lexer.dir/build.make
 lexer: /usr/local/lib/libreflex.a
 lexer: CMakeFiles/lexer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable lexer"
-=======
-lexer: CMakeFiles/lexer.dir/build.make
-lexer: /usr/local/lib/libreflex.a
-lexer: CMakeFiles/lexer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/trevorbergstrom/NewCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable lexer"
->>>>>>> origin/master
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable lexer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lexer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -213,6 +169,6 @@ CMakeFiles/lexer.dir/depend: quack.tab.hxx
 CMakeFiles/lexer.dir/depend: location.hh
 CMakeFiles/lexer.dir/depend: position.hh
 CMakeFiles/lexer.dir/depend: stack.hh
-	cd /Users/trevorbergstrom/NewCompiler && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/trevorbergstrom/NewCompiler /Users/trevorbergstrom/NewCompiler /Users/trevorbergstrom/NewCompiler /Users/trevorbergstrom/NewCompiler /Users/trevorbergstrom/NewCompiler/CMakeFiles/lexer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/trevorbergstrom/desktop/561FinalCompiler && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/trevorbergstrom/desktop/561FinalCompiler /Users/trevorbergstrom/desktop/561FinalCompiler /Users/trevorbergstrom/desktop/561FinalCompiler /Users/trevorbergstrom/desktop/561FinalCompiler /Users/trevorbergstrom/desktop/561FinalCompiler/CMakeFiles/lexer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/lexer.dir/depend
 

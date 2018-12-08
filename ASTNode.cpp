@@ -46,10 +46,7 @@ namespace AST {
 /******************************************************************/	
 	std::vector<ASTNode*> ASTNode::getFormalArgs() {
         std::vector<ASTNode*> list;
-<<<<<<< HEAD
-=======
 	    printf("Getting formal args from: %s - children size %d", nodeTypeNames[this->type_], this->children.size());
->>>>>>> origin/master
         for(int i = 0; i < this->children.size(); i++) {
             if(this->children[i]->type_ == ClassArgs) {
                 list.push_back(this->children[i]);
@@ -72,13 +69,11 @@ namespace AST {
         	return NULL;
     	}
 /******************************************************************/
-<<<<<<< HEAD
+
+    //std::vector<ASTNode*> ASTNode::getStatements() {
+    //	std::vector<ASTNode*> list;
     std::vector<ASTNode*> ASTNode::getStatements() {
     	std::vector<ASTNode*> list;
-=======
-    std::std::vector<ASTNode*> ASTNode::getStatements() {
-    	std::std::vector<ASTNode*> list;
->>>>>>> origin/master
     	for(int i = 0; i < this->children.size(); i++) {
 
     	}
@@ -107,7 +102,6 @@ namespace AST {
 		return NULL;
 	}
 /******************************************************************/
-<<<<<<< HEAD
 	ASTNode* ASTNode::getLeftMost() {
 		ASTNode* lexp = this->getNodeType(L_expr);
 		ASTNode* retNode;
@@ -132,6 +126,4 @@ namespace AST {
 			return this->children[0]->getTypeIdent();
 		}
 	}
-=======
->>>>>>> origin/master
 }
